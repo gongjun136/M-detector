@@ -1,0 +1,4 @@
+Log file created at: 2024/03/22 11:11:38
+Running on machine: gj
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0322 11:11:38.120599 24170 dynfilter_with_odom.cpp:149] out_file: /mnt/e
