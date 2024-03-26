@@ -1,0 +1,470 @@
+Log file created at: 2024/03/22 17:59:48
+Running on machine: gj
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0322 17:59:48.420570 30641 dynfilter_with_odom.cpp:88] cur frame: 0
+I0322 17:59:48.499831 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0789183
+I0322 17:59:48.532275 30641 dynfilter_with_odom.cpp:88] cur frame: 1
+I0322 17:59:48.602867 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.070531
+I0322 17:59:48.632496 30641 dynfilter_with_odom.cpp:88] cur frame: 2
+I0322 17:59:48.711822 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0792628
+I0322 17:59:48.758826 30641 dynfilter_with_odom.cpp:88] cur frame: 3
+I0322 17:59:48.840567 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0816759
+I0322 17:59:48.910079 30641 dynfilter_with_odom.cpp:88] cur frame: 4
+I0322 17:59:48.990929 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.080742
+I0322 17:59:49.070294 30641 dynfilter_with_odom.cpp:88] cur frame: 5
+I0322 17:59:49.153602 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0832394
+I0322 17:59:49.315485 30641 dynfilter_with_odom.cpp:88] cur frame: 6
+I0322 17:59:49.420223 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.104653
+I0322 17:59:49.575306 30641 dynfilter_with_odom.cpp:88] cur frame: 7
+I0322 17:59:49.654552 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0791791
+I0322 17:59:49.760511 30641 dynfilter_with_odom.cpp:88] cur frame: 8
+I0322 17:59:49.832902 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.072337
+I0322 17:59:50.000370 30641 dynfilter_with_odom.cpp:88] cur frame: 9
+I0322 17:59:50.077522 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0770985
+I0322 17:59:50.149663 30641 dynfilter_with_odom.cpp:88] cur frame: 10
+I0322 17:59:50.222069 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0723207
+I0322 17:59:50.292071 30641 dynfilter_with_odom.cpp:88] cur frame: 11
+I0322 17:59:50.365140 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0729618
+I0322 17:59:50.438733 30641 dynfilter_with_odom.cpp:88] cur frame: 12
+I0322 17:59:50.510757 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0719183
+I0322 17:59:50.573834 30641 dynfilter_with_odom.cpp:88] cur frame: 13
+I0322 17:59:50.648813 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0748
+I0322 17:59:50.738153 30641 dynfilter_with_odom.cpp:88] cur frame: 14
+I0322 17:59:50.815052 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0767869
+I0322 17:59:50.879746 30641 dynfilter_with_odom.cpp:88] cur frame: 15
+I0322 17:59:50.962392 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0823372
+I0322 17:59:51.032881 30641 dynfilter_with_odom.cpp:88] cur frame: 16
+I0322 17:59:51.114876 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0816984
+I0322 17:59:51.187124 30641 dynfilter_with_odom.cpp:88] cur frame: 17
+I0322 17:59:51.273933 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.086673
+I0322 17:59:51.353739 30641 dynfilter_with_odom.cpp:88] cur frame: 18
+I0322 17:59:51.439220 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0853098
+I0322 17:59:51.530578 30641 dynfilter_with_odom.cpp:88] cur frame: 19
+I0322 17:59:51.616861 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0862008
+I0322 17:59:51.701310 30641 dynfilter_with_odom.cpp:88] cur frame: 20
+I0322 17:59:51.787384 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0859758
+I0322 17:59:51.853195 30641 dynfilter_with_odom.cpp:88] cur frame: 21
+I0322 17:59:51.929225 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0759362
+I0322 17:59:51.991348 30641 dynfilter_with_odom.cpp:88] cur frame: 22
+I0322 17:59:52.073721 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0823036
+I0322 17:59:52.133312 30641 dynfilter_with_odom.cpp:88] cur frame: 23
+I0322 17:59:52.207588 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0741853
+I0322 17:59:52.281529 30641 dynfilter_with_odom.cpp:88] cur frame: 24
+I0322 17:59:52.365401 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0837105
+I0322 17:59:52.437124 30641 dynfilter_with_odom.cpp:88] cur frame: 25
+I0322 17:59:52.524010 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0868304
+I0322 17:59:52.589710 30641 dynfilter_with_odom.cpp:88] cur frame: 26
+I0322 17:59:52.682875 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0930799
+I0322 17:59:52.742722 30641 dynfilter_with_odom.cpp:88] cur frame: 27
+I0322 17:59:52.824193 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0813043
+I0322 17:59:52.890301 30641 dynfilter_with_odom.cpp:88] cur frame: 28
+I0322 17:59:52.979856 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0894281
+I0322 17:59:53.079531 30641 dynfilter_with_odom.cpp:88] cur frame: 29
+I0322 17:59:53.166585 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0868798
+I0322 17:59:53.227383 30641 dynfilter_with_odom.cpp:88] cur frame: 30
+I0322 17:59:53.303875 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0763523
+I0322 17:59:53.365334 30641 dynfilter_with_odom.cpp:88] cur frame: 31
+I0322 17:59:53.453915 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0884088
+I0322 17:59:53.521030 30641 dynfilter_with_odom.cpp:88] cur frame: 32
+I0322 17:59:53.605793 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0846323
+I0322 17:59:53.674643 30641 dynfilter_with_odom.cpp:88] cur frame: 33
+I0322 17:59:53.763585 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0888086
+I0322 17:59:53.828577 30641 dynfilter_with_odom.cpp:88] cur frame: 34
+I0322 17:59:53.908035 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0793755
+I0322 17:59:53.994318 30641 dynfilter_with_odom.cpp:88] cur frame: 35
+I0322 17:59:54.081760 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0873571
+I0322 17:59:54.152209 30641 dynfilter_with_odom.cpp:88] cur frame: 36
+I0322 17:59:54.233762 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0814719
+I0322 17:59:54.312729 30641 dynfilter_with_odom.cpp:88] cur frame: 37
+I0322 17:59:54.398190 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.085354
+I0322 17:59:54.467684 30641 dynfilter_with_odom.cpp:88] cur frame: 38
+I0322 17:59:54.556685 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0888283
+I0322 17:59:54.623224 30641 dynfilter_with_odom.cpp:88] cur frame: 39
+I0322 17:59:54.700613 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0773017
+I0322 17:59:54.766376 30641 dynfilter_with_odom.cpp:88] cur frame: 40
+I0322 17:59:54.850101 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0836235
+I0322 17:59:54.917030 30641 dynfilter_with_odom.cpp:88] cur frame: 41
+I0322 17:59:54.999423 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0822368
+I0322 17:59:55.067741 30641 dynfilter_with_odom.cpp:88] cur frame: 42
+I0322 17:59:55.157002 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0891658
+I0322 17:59:55.229939 30641 dynfilter_with_odom.cpp:88] cur frame: 43
+I0322 17:59:55.306365 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0763062
+I0322 17:59:55.390400 30641 dynfilter_with_odom.cpp:88] cur frame: 44
+I0322 17:59:55.470000 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0795191
+I0322 17:59:55.539120 30641 dynfilter_with_odom.cpp:88] cur frame: 45
+I0322 17:59:55.622655 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0833799
+I0322 17:59:55.691772 30641 dynfilter_with_odom.cpp:88] cur frame: 46
+I0322 17:59:55.773322 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0814765
+I0322 17:59:55.842471 30641 dynfilter_with_odom.cpp:88] cur frame: 47
+I0322 17:59:55.918800 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0762481
+I0322 17:59:55.986456 30641 dynfilter_with_odom.cpp:88] cur frame: 48
+I0322 17:59:56.068315 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0817808
+I0322 17:59:56.137069 30641 dynfilter_with_odom.cpp:88] cur frame: 49
+I0322 17:59:56.208963 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0717888
+I0322 17:59:56.273368 30641 dynfilter_with_odom.cpp:88] cur frame: 50
+I0322 17:59:56.340955 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0674193
+I0322 17:59:56.413712 30641 dynfilter_with_odom.cpp:88] cur frame: 51
+I0322 17:59:56.494412 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0805785
+I0322 17:59:56.568382 30641 dynfilter_with_odom.cpp:88] cur frame: 52
+I0322 17:59:56.645977 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0773862
+I0322 17:59:56.710696 30641 dynfilter_with_odom.cpp:88] cur frame: 53
+I0322 17:59:56.789342 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0785516
+I0322 17:59:56.850709 30641 dynfilter_with_odom.cpp:88] cur frame: 54
+I0322 17:59:56.919971 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0691843
+I0322 17:59:56.984553 30641 dynfilter_with_odom.cpp:88] cur frame: 55
+I0322 17:59:57.061336 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.076705
+I0322 17:59:57.123744 30641 dynfilter_with_odom.cpp:88] cur frame: 56
+I0322 17:59:57.195740 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.071754
+I0322 17:59:57.277253 30641 dynfilter_with_odom.cpp:88] cur frame: 57
+I0322 17:59:57.353883 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0765243
+I0322 17:59:57.425201 30641 dynfilter_with_odom.cpp:88] cur frame: 58
+I0322 17:59:57.496068 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0707923
+I0322 17:59:57.557345 30641 dynfilter_with_odom.cpp:88] cur frame: 59
+I0322 17:59:57.632169 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0747128
+I0322 17:59:57.694862 30641 dynfilter_with_odom.cpp:88] cur frame: 60
+I0322 17:59:57.774538 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0796177
+I0322 17:59:57.840330 30641 dynfilter_with_odom.cpp:88] cur frame: 61
+I0322 17:59:57.925817 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0853945
+I0322 17:59:57.992072 30641 dynfilter_with_odom.cpp:88] cur frame: 62
+I0322 17:59:58.088317 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0960613
+I0322 17:59:58.156811 30641 dynfilter_with_odom.cpp:88] cur frame: 63
+I0322 17:59:58.228627 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0717433
+I0322 17:59:58.285534 30641 dynfilter_with_odom.cpp:88] cur frame: 64
+I0322 17:59:58.372855 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0872446
+I0322 17:59:58.427798 30641 dynfilter_with_odom.cpp:88] cur frame: 65
+I0322 17:59:58.497169 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.069295
+I0322 17:59:58.557518 30641 dynfilter_with_odom.cpp:88] cur frame: 66
+I0322 17:59:58.638355 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0807416
+I0322 17:59:58.699285 30641 dynfilter_with_odom.cpp:88] cur frame: 67
+I0322 17:59:58.780093 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0807163
+I0322 17:59:58.858251 30641 dynfilter_with_odom.cpp:88] cur frame: 68
+I0322 17:59:58.936321 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0780102
+I0322 17:59:59.002967 30641 dynfilter_with_odom.cpp:88] cur frame: 69
+I0322 17:59:59.093814 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0907743
+I0322 17:59:59.162585 30641 dynfilter_with_odom.cpp:88] cur frame: 70
+I0322 17:59:59.253221 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0905691
+I0322 17:59:59.334908 30641 dynfilter_with_odom.cpp:88] cur frame: 71
+I0322 17:59:59.441613 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.106625
+I0322 17:59:59.513763 30641 dynfilter_with_odom.cpp:88] cur frame: 72
+I0322 17:59:59.616736 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.102874
+I0322 17:59:59.685048 30641 dynfilter_with_odom.cpp:88] cur frame: 73
+I0322 17:59:59.767315 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0821729
+I0322 17:59:59.839385 30641 dynfilter_with_odom.cpp:88] cur frame: 74
+I0322 17:59:59.926710 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0872489
+I0322 17:59:59.996366 30641 dynfilter_with_odom.cpp:88] cur frame: 75
+I0322 18:00:00.091744 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.09528
+I0322 18:00:00.172181 30641 dynfilter_with_odom.cpp:88] cur frame: 76
+I0322 18:00:00.252650 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0803961
+I0322 18:00:00.322305 30641 dynfilter_with_odom.cpp:88] cur frame: 77
+I0322 18:00:00.399819 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0774485
+I0322 18:00:00.467614 30641 dynfilter_with_odom.cpp:88] cur frame: 78
+I0322 18:00:00.547570 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0797429
+I0322 18:00:00.616286 30641 dynfilter_with_odom.cpp:88] cur frame: 79
+I0322 18:00:00.705137 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0887721
+I0322 18:00:00.764560 30641 dynfilter_with_odom.cpp:88] cur frame: 80
+I0322 18:00:00.846606 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0819719
+I0322 18:00:00.898880 30641 dynfilter_with_odom.cpp:88] cur frame: 81
+I0322 18:00:00.984709 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0857129
+I0322 18:00:01.043365 30641 dynfilter_with_odom.cpp:88] cur frame: 82
+I0322 18:00:01.123204 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0797581
+I0322 18:00:01.179919 30641 dynfilter_with_odom.cpp:88] cur frame: 83
+I0322 18:00:01.252348 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0723202
+I0322 18:00:01.327586 30641 dynfilter_with_odom.cpp:88] cur frame: 84
+I0322 18:00:01.398130 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.070465
+I0322 18:00:01.451903 30641 dynfilter_with_odom.cpp:88] cur frame: 85
+I0322 18:00:01.528733 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0767464
+I0322 18:00:01.592890 30641 dynfilter_with_odom.cpp:88] cur frame: 86
+I0322 18:00:01.671176 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0782172
+I0322 18:00:01.728775 30641 dynfilter_with_odom.cpp:88] cur frame: 87
+I0322 18:00:01.800498 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0716649
+I0322 18:00:01.858717 30641 dynfilter_with_odom.cpp:88] cur frame: 88
+I0322 18:00:01.932184 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0733932
+I0322 18:00:01.994144 30641 dynfilter_with_odom.cpp:88] cur frame: 89
+I0322 18:00:02.071403 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0771899
+I0322 18:00:02.139497 30641 dynfilter_with_odom.cpp:88] cur frame: 90
+I0322 18:00:02.212706 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0731211
+I0322 18:00:02.277415 30641 dynfilter_with_odom.cpp:88] cur frame: 91
+I0322 18:00:02.357117 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0796251
+I0322 18:00:02.425144 30641 dynfilter_with_odom.cpp:88] cur frame: 92
+I0322 18:00:02.507723 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0825131
+I0322 18:00:02.573078 30641 dynfilter_with_odom.cpp:88] cur frame: 93
+I0322 18:00:02.661876 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0886925
+I0322 18:00:02.732960 30641 dynfilter_with_odom.cpp:88] cur frame: 94
+I0322 18:00:02.807377 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0743456
+I0322 18:00:02.877419 30641 dynfilter_with_odom.cpp:88] cur frame: 95
+I0322 18:00:02.955953 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0784492
+I0322 18:00:03.025229 30641 dynfilter_with_odom.cpp:88] cur frame: 96
+I0322 18:00:03.099288 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0739761
+I0322 18:00:03.168704 30641 dynfilter_with_odom.cpp:88] cur frame: 97
+I0322 18:00:03.247718 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0789542
+I0322 18:00:03.307209 30641 dynfilter_with_odom.cpp:88] cur frame: 98
+I0322 18:00:03.385715 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0784256
+I0322 18:00:03.454609 30641 dynfilter_with_odom.cpp:88] cur frame: 99
+I0322 18:00:03.533275 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0785926
+I0322 18:00:03.600358 30641 dynfilter_with_odom.cpp:88] cur frame: 100
+I0322 18:00:03.684784 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.084362
+I0322 18:00:03.747983 30641 dynfilter_with_odom.cpp:88] cur frame: 101
+I0322 18:00:03.824831 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0767786
+I0322 18:00:03.882951 30641 dynfilter_with_odom.cpp:88] cur frame: 102
+I0322 18:00:03.954770 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0717761
+I0322 18:00:04.017148 30641 dynfilter_with_odom.cpp:88] cur frame: 103
+I0322 18:00:04.106782 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0895666
+I0322 18:00:04.173952 30641 dynfilter_with_odom.cpp:88] cur frame: 104
+I0322 18:00:04.248071 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0739973
+I0322 18:00:04.310993 30641 dynfilter_with_odom.cpp:88] cur frame: 105
+I0322 18:00:04.390013 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0789462
+I0322 18:00:04.454934 30641 dynfilter_with_odom.cpp:88] cur frame: 106
+I0322 18:00:04.530557 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0755585
+I0322 18:00:04.592739 30641 dynfilter_with_odom.cpp:88] cur frame: 107
+I0322 18:00:04.680269 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0874618
+I0322 18:00:04.747493 30641 dynfilter_with_odom.cpp:88] cur frame: 108
+I0322 18:00:04.833556 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0859753
+I0322 18:00:04.900322 30641 dynfilter_with_odom.cpp:88] cur frame: 109
+I0322 18:00:04.986259 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0858582
+I0322 18:00:05.057695 30641 dynfilter_with_odom.cpp:88] cur frame: 110
+I0322 18:00:05.136786 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0790247
+I0322 18:00:05.199997 30641 dynfilter_with_odom.cpp:88] cur frame: 111
+I0322 18:00:05.278787 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0787241
+I0322 18:00:05.343076 30641 dynfilter_with_odom.cpp:88] cur frame: 112
+I0322 18:00:05.420698 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.077553
+I0322 18:00:05.498443 30641 dynfilter_with_odom.cpp:88] cur frame: 113
+I0322 18:00:05.577380 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0788632
+I0322 18:00:05.642760 30641 dynfilter_with_odom.cpp:88] cur frame: 114
+I0322 18:00:05.723126 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0802955
+I0322 18:00:05.788717 30641 dynfilter_with_odom.cpp:88] cur frame: 115
+I0322 18:00:05.862908 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0741192
+I0322 18:00:05.922451 30641 dynfilter_with_odom.cpp:88] cur frame: 116
+I0322 18:00:05.999148 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0766326
+I0322 18:00:06.068462 30641 dynfilter_with_odom.cpp:88] cur frame: 117
+I0322 18:00:06.164639 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0960458
+I0322 18:00:06.254302 30641 dynfilter_with_odom.cpp:88] cur frame: 118
+I0322 18:00:06.337116 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0827321
+I0322 18:00:06.420473 30641 dynfilter_with_odom.cpp:88] cur frame: 119
+I0322 18:00:06.513916 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0933755
+I0322 18:00:06.599722 30641 dynfilter_with_odom.cpp:88] cur frame: 120
+I0322 18:00:06.685717 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0859294
+I0322 18:00:06.756194 30641 dynfilter_with_odom.cpp:88] cur frame: 121
+I0322 18:00:06.833253 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0770004
+I0322 18:00:06.994836 30641 dynfilter_with_odom.cpp:88] cur frame: 122
+I0322 18:00:07.080224 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0853116
+I0322 18:00:07.150283 30641 dynfilter_with_odom.cpp:88] cur frame: 123
+I0322 18:00:07.236569 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0861936
+I0322 18:00:07.297097 30641 dynfilter_with_odom.cpp:88] cur frame: 124
+I0322 18:00:07.393671 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0964447
+I0322 18:00:07.449163 30641 dynfilter_with_odom.cpp:88] cur frame: 125
+I0322 18:00:07.555809 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.106537
+I0322 18:00:07.625087 30641 dynfilter_with_odom.cpp:88] cur frame: 126
+I0322 18:00:07.712392 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0872361
+I0322 18:00:07.773911 30641 dynfilter_with_odom.cpp:88] cur frame: 127
+I0322 18:00:07.864698 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0907089
+I0322 18:00:07.922497 30641 dynfilter_with_odom.cpp:88] cur frame: 128
+I0322 18:00:08.002601 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0800308
+I0322 18:00:08.075397 30641 dynfilter_with_odom.cpp:88] cur frame: 129
+I0322 18:00:08.156869 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0814199
+I0322 18:00:08.208719 30641 dynfilter_with_odom.cpp:88] cur frame: 130
+I0322 18:00:08.289067 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0802288
+I0322 18:00:08.350998 30641 dynfilter_with_odom.cpp:88] cur frame: 131
+I0322 18:00:08.430186 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0791053
+I0322 18:00:08.489758 30641 dynfilter_with_odom.cpp:88] cur frame: 132
+I0322 18:00:08.563401 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0735683
+I0322 18:00:08.623685 30641 dynfilter_with_odom.cpp:88] cur frame: 133
+I0322 18:00:08.706962 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0831919
+I0322 18:00:08.759367 30641 dynfilter_with_odom.cpp:88] cur frame: 134
+I0322 18:00:08.836004 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0765732
+I0322 18:00:08.929525 30641 dynfilter_with_odom.cpp:88] cur frame: 135
+I0322 18:00:09.007799 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0781996
+I0322 18:00:09.066131 30641 dynfilter_with_odom.cpp:88] cur frame: 136
+I0322 18:00:09.160984 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.094784
+I0322 18:00:09.241134 30641 dynfilter_with_odom.cpp:88] cur frame: 137
+I0322 18:00:09.332065 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0908641
+I0322 18:00:09.391665 30641 dynfilter_with_odom.cpp:88] cur frame: 138
+I0322 18:00:09.476717 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0849886
+I0322 18:00:09.533269 30641 dynfilter_with_odom.cpp:88] cur frame: 139
+I0322 18:00:09.607033 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0736897
+I0322 18:00:09.664399 30641 dynfilter_with_odom.cpp:88] cur frame: 140
+I0322 18:00:09.744927 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0804611
+I0322 18:00:09.799000 30641 dynfilter_with_odom.cpp:88] cur frame: 141
+I0322 18:00:09.885875 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0868182
+I0322 18:00:09.937821 30641 dynfilter_with_odom.cpp:88] cur frame: 142
+I0322 18:00:10.012207 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.074317
+I0322 18:00:10.068605 30641 dynfilter_with_odom.cpp:88] cur frame: 143
+I0322 18:00:10.139900 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0712334
+I0322 18:00:10.195483 30641 dynfilter_with_odom.cpp:88] cur frame: 144
+I0322 18:00:10.273207 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0776652
+I0322 18:00:10.324254 30641 dynfilter_with_odom.cpp:88] cur frame: 145
+I0322 18:00:10.398981 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0746533
+I0322 18:00:10.457892 30641 dynfilter_with_odom.cpp:88] cur frame: 146
+I0322 18:00:10.535946 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0779975
+I0322 18:00:10.588471 30641 dynfilter_with_odom.cpp:88] cur frame: 147
+I0322 18:00:10.665028 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0764867
+I0322 18:00:10.720002 30641 dynfilter_with_odom.cpp:88] cur frame: 148
+I0322 18:00:10.791925 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0718496
+I0322 18:00:10.849046 30641 dynfilter_with_odom.cpp:88] cur frame: 149
+I0322 18:00:10.930821 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0817176
+I0322 18:00:10.978693 30641 dynfilter_with_odom.cpp:88] cur frame: 150
+I0322 18:00:11.050506 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0717265
+I0322 18:00:11.103533 30641 dynfilter_with_odom.cpp:88] cur frame: 151
+I0322 18:00:11.177182 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0735865
+I0322 18:00:11.225692 30641 dynfilter_with_odom.cpp:88] cur frame: 152
+I0322 18:00:11.296406 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.070622
+I0322 18:00:11.350095 30641 dynfilter_with_odom.cpp:88] cur frame: 153
+I0322 18:00:11.426137 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0759557
+I0322 18:00:11.484211 30641 dynfilter_with_odom.cpp:88] cur frame: 154
+I0322 18:00:11.566622 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0822998
+I0322 18:00:11.618194 30641 dynfilter_with_odom.cpp:88] cur frame: 155
+I0322 18:00:11.680122 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0618327
+I0322 18:00:11.723269 30641 dynfilter_with_odom.cpp:88] cur frame: 156
+I0322 18:00:11.787660 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0643359
+I0322 18:00:11.827754 30641 dynfilter_with_odom.cpp:88] cur frame: 157
+I0322 18:00:11.890830 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0630282
+I0322 18:00:11.933279 30641 dynfilter_with_odom.cpp:88] cur frame: 158
+I0322 18:00:11.995222 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0618911
+I0322 18:00:12.036993 30641 dynfilter_with_odom.cpp:88] cur frame: 159
+I0322 18:00:12.099099 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0620575
+I0322 18:00:12.138475 30641 dynfilter_with_odom.cpp:88] cur frame: 160
+I0322 18:00:12.198392 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0598723
+I0322 18:00:12.238088 30641 dynfilter_with_odom.cpp:88] cur frame: 161
+I0322 18:00:12.302914 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0647774
+I0322 18:00:12.344870 30641 dynfilter_with_odom.cpp:88] cur frame: 162
+I0322 18:00:12.404289 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0593644
+I0322 18:00:12.448565 30641 dynfilter_with_odom.cpp:88] cur frame: 163
+I0322 18:00:12.503468 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0548493
+I0322 18:00:12.544576 30641 dynfilter_with_odom.cpp:88] cur frame: 164
+I0322 18:00:12.599668 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0550415
+I0322 18:00:12.641276 30641 dynfilter_with_odom.cpp:88] cur frame: 165
+I0322 18:00:12.698401 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0570754
+I0322 18:00:12.740868 30641 dynfilter_with_odom.cpp:88] cur frame: 166
+I0322 18:00:12.798548 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0576293
+I0322 18:00:12.838932 30641 dynfilter_with_odom.cpp:88] cur frame: 167
+I0322 18:00:12.897965 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0589887
+I0322 18:00:12.937798 30641 dynfilter_with_odom.cpp:88] cur frame: 168
+I0322 18:00:12.993184 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0553264
+I0322 18:00:13.034852 30641 dynfilter_with_odom.cpp:88] cur frame: 169
+I0322 18:00:13.092626 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0577107
+I0322 18:00:13.133121 30641 dynfilter_with_odom.cpp:88] cur frame: 170
+I0322 18:00:13.194769 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0615942
+I0322 18:00:13.237596 30641 dynfilter_with_odom.cpp:88] cur frame: 171
+I0322 18:00:13.298164 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0605227
+I0322 18:00:13.338714 30641 dynfilter_with_odom.cpp:88] cur frame: 172
+I0322 18:00:13.397817 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0590544
+I0322 18:00:13.438069 30641 dynfilter_with_odom.cpp:88] cur frame: 173
+I0322 18:00:13.498852 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0607364
+I0322 18:00:13.538440 30641 dynfilter_with_odom.cpp:88] cur frame: 174
+I0322 18:00:13.599310 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0608195
+I0322 18:00:13.638482 30641 dynfilter_with_odom.cpp:88] cur frame: 175
+I0322 18:00:13.706701 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0681638
+I0322 18:00:13.750732 30641 dynfilter_with_odom.cpp:88] cur frame: 176
+I0322 18:00:13.815528 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0647421
+I0322 18:00:13.855238 30641 dynfilter_with_odom.cpp:88] cur frame: 177
+I0322 18:00:13.921540 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0662476
+I0322 18:00:13.961771 30641 dynfilter_with_odom.cpp:88] cur frame: 178
+I0322 18:00:14.019850 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0579999
+I0322 18:00:14.060001 30641 dynfilter_with_odom.cpp:88] cur frame: 179
+I0322 18:00:14.121840 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0617847
+I0322 18:00:14.161985 30641 dynfilter_with_odom.cpp:88] cur frame: 180
+I0322 18:00:14.226677 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0646368
+I0322 18:00:14.265422 30641 dynfilter_with_odom.cpp:88] cur frame: 181
+I0322 18:00:14.325474 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.059996
+I0322 18:00:14.366647 30641 dynfilter_with_odom.cpp:88] cur frame: 182
+I0322 18:00:14.428977 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0622701
+I0322 18:00:14.468528 30641 dynfilter_with_odom.cpp:88] cur frame: 183
+I0322 18:00:14.527130 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0585465
+I0322 18:00:14.567090 30641 dynfilter_with_odom.cpp:88] cur frame: 184
+I0322 18:00:14.620851 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0537023
+I0322 18:00:14.660169 30641 dynfilter_with_odom.cpp:88] cur frame: 185
+I0322 18:00:14.717190 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.056962
+I0322 18:00:14.754937 30641 dynfilter_with_odom.cpp:88] cur frame: 186
+I0322 18:00:14.807366 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0523747
+I0322 18:00:14.847854 30641 dynfilter_with_odom.cpp:88] cur frame: 187
+I0322 18:00:14.898912 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0510103
+I0322 18:00:14.937805 30641 dynfilter_with_odom.cpp:88] cur frame: 188
+I0322 18:00:14.989521 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0516645
+I0322 18:00:15.027956 30641 dynfilter_with_odom.cpp:88] cur frame: 189
+I0322 18:00:15.078092 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.050082
+I0322 18:00:15.121531 30641 dynfilter_with_odom.cpp:88] cur frame: 190
+I0322 18:00:15.172272 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0506801
+I0322 18:00:15.210410 30641 dynfilter_with_odom.cpp:88] cur frame: 191
+I0322 18:00:15.260807 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0503397
+I0322 18:00:15.301520 30641 dynfilter_with_odom.cpp:88] cur frame: 192
+I0322 18:00:15.347039 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.045466
+I0322 18:00:15.387928 30641 dynfilter_with_odom.cpp:88] cur frame: 193
+I0322 18:00:15.439534 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0515515
+I0322 18:00:15.482646 30641 dynfilter_with_odom.cpp:88] cur frame: 194
+I0322 18:00:15.532737 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0500363
+I0322 18:00:15.572999 30641 dynfilter_with_odom.cpp:88] cur frame: 195
+I0322 18:00:15.623617 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0505526
+I0322 18:00:15.666040 30641 dynfilter_with_odom.cpp:88] cur frame: 196
+I0322 18:00:15.715337 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0492265
+I0322 18:00:15.754673 30641 dynfilter_with_odom.cpp:88] cur frame: 197
+I0322 18:00:15.805395 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0506618
+I0322 18:00:15.846995 30641 dynfilter_with_odom.cpp:88] cur frame: 198
+I0322 18:00:15.900112 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0530633
+I0322 18:00:15.943217 30641 dynfilter_with_odom.cpp:88] cur frame: 199
+I0322 18:00:15.999919 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0566417
+I0322 18:00:16.041586 30641 dynfilter_with_odom.cpp:88] cur frame: 200
+I0322 18:00:16.096343 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0547024
+I0322 18:00:16.135949 30641 dynfilter_with_odom.cpp:88] cur frame: 201
+I0322 18:00:16.189491 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0534765
+I0322 18:00:16.227818 30641 dynfilter_with_odom.cpp:88] cur frame: 202
+I0322 18:00:16.279925 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.052049
+I0322 18:00:16.319878 30641 dynfilter_with_odom.cpp:88] cur frame: 203
+I0322 18:00:16.372069 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0521294
+I0322 18:00:16.414700 30641 dynfilter_with_odom.cpp:88] cur frame: 204
+I0322 18:00:16.471248 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0564742
+I0322 18:00:16.511425 30641 dynfilter_with_odom.cpp:88] cur frame: 205
+I0322 18:00:16.564077 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.052588
+I0322 18:00:16.603144 30641 dynfilter_with_odom.cpp:88] cur frame: 206
+I0322 18:00:16.662516 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0593153
+I0322 18:00:16.699913 30641 dynfilter_with_odom.cpp:88] cur frame: 207
+I0322 18:00:16.757040 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0570263
+I0322 18:00:16.796403 30641 dynfilter_with_odom.cpp:88] cur frame: 208
+I0322 18:00:16.856036 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0595752
+I0322 18:00:16.895284 30641 dynfilter_with_odom.cpp:88] cur frame: 209
+I0322 18:00:16.956336 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0609917
+I0322 18:00:16.996820 30641 dynfilter_with_odom.cpp:88] cur frame: 210
+I0322 18:00:17.057821 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0609399
+I0322 18:00:17.097937 30641 dynfilter_with_odom.cpp:88] cur frame: 211
+I0322 18:00:17.156734 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.058738
+I0322 18:00:17.196565 30641 dynfilter_with_odom.cpp:88] cur frame: 212
+I0322 18:00:17.266412 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0697782
+I0322 18:00:17.307643 30641 dynfilter_with_odom.cpp:88] cur frame: 213
+I0322 18:00:17.375131 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0674253
+I0322 18:00:17.421931 30641 dynfilter_with_odom.cpp:88] cur frame: 214
+I0322 18:00:17.490804 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.068811
+I0322 18:00:17.533699 30641 dynfilter_with_odom.cpp:88] cur frame: 215
+I0322 18:00:17.593487 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0597247
+I0322 18:00:17.637687 30641 dynfilter_with_odom.cpp:88] cur frame: 216
+I0322 18:00:17.698029 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0602725
+I0322 18:00:17.739255 30641 dynfilter_with_odom.cpp:88] cur frame: 217
+I0322 18:00:17.803503 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0641838
+I0322 18:00:17.847923 30641 dynfilter_with_odom.cpp:88] cur frame: 218
+I0322 18:00:17.913100 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0651038
+I0322 18:00:17.955366 30641 dynfilter_with_odom.cpp:88] cur frame: 219
+I0322 18:00:18.015673 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0602412
+I0322 18:00:18.054790 30641 dynfilter_with_odom.cpp:88] cur frame: 220
+I0322 18:00:18.116362 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0615017
+I0322 18:00:18.161645 30641 dynfilter_with_odom.cpp:88] cur frame: 221
+I0322 18:00:18.234344 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0726323
+I0322 18:00:18.277374 30641 dynfilter_with_odom.cpp:88] cur frame: 222
+I0322 18:00:18.342662 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0652194
+I0322 18:00:18.391273 30641 dynfilter_with_odom.cpp:88] cur frame: 223
+I0322 18:00:18.453634 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0622976
+I0322 18:00:18.496798 30641 dynfilter_with_odom.cpp:88] cur frame: 224
+I0322 18:00:18.562392 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0655294
+I0322 18:00:18.603286 30641 dynfilter_with_odom.cpp:88] cur frame: 225
+I0322 18:00:18.663569 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0602062
+I0322 18:00:18.702387 30641 dynfilter_with_odom.cpp:88] cur frame: 226
+I0322 18:00:18.765727 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0632655
+I0322 18:00:18.806038 30641 dynfilter_with_odom.cpp:88] cur frame: 227
+I0322 18:00:18.865950 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0598422
+I0322 18:00:18.905292 30641 dynfilter_with_odom.cpp:88] cur frame: 228
+I0322 18:00:18.968392 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.063027
+I0322 18:00:19.011106 30641 dynfilter_with_odom.cpp:88] cur frame: 229
+I0322 18:00:19.077126 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0659177
+I0322 18:00:19.119904 30641 dynfilter_with_odom.cpp:88] cur frame: 230
+I0322 18:00:19.176874 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.056898
+I0322 18:00:19.219921 30641 dynfilter_with_odom.cpp:88] cur frame: 231
+I0322 18:00:19.279937 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0599505
+I0322 18:00:19.318260 30641 dynfilter_with_odom.cpp:88] cur frame: 232
+I0322 18:00:19.373499 30641 dynfilter_with_odom.cpp:121] dynamic filter time: 0.0551721
+I0322 18:00:25.005729 30641 dynfilter_with_odom.cpp:159] Average time of dynamic filter: 0.0735928

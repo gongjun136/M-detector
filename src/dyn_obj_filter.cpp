@@ -2,7 +2,7 @@
  * @Author: gongjun136 gongjun136@gmail.com
  * @Date: 2024-03-12 09:49:25
  * @LastEditors: gongjun136 gongjun136@gmail.com
- * @LastEditTime: 2024-03-22 10:52:39
+ * @LastEditTime: 2024-03-25 19:37:55
  * @FilePath: /catkin_ws_M-detector/src/M-detector-noted/src/dyn_obj_filter.cpp
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -112,8 +112,8 @@ void DynObjFilter::init(ros::NodeHandle &nh)
     nh.param<float>("dyn_obj/buffer_dur", buffer_dur, 0.1f);
     nh.param<int>("dyn_obj/point_index", point_index, 0);
     nh.param<string>("dyn_obj/frame_id", frame_id, "camera_init");
-    nh.param<string>("dyn_obj/time_file", time_file, "");
-    nh.param<string>("dyn_obj/time_breakdown_file", time_breakdown_file, "");
+    // nh.param<string>("dyn_obj/time_file", time_file, "");
+    // nh.param<string>("dyn_obj/time_breakdown_file", time_breakdown_file, "");
     max_ind = floor(3.1415926 * 2 / hor_resolution_max);
     // LOG(INFO) << "hor_resolution_max: " << hor_resolution_max << ",ver_resolution_max: " << ver_resolution_max;
 
@@ -188,15 +188,15 @@ void DynObjFilter::init(ros::NodeHandle &nh)
     }
 
     // 5. 如果指定了时间文件，准备时间日志的文件流
-    if (time_file != "")
-    {
-        time_out.open(time_file, ios::out);
-    }
+    // if (time_file != "")
+    // {
+    //     time_out.open(time_file, ios::out);
+    // }
 
-    if (time_breakdown_file != "")
-    {
-        time_breakdown_out.open(time_breakdown_file, ios::out);
-    }
+    // if (time_breakdown_file != "")
+    // {
+    //     time_breakdown_out.open(time_breakdown_file, ios::out);
+    // }
     // 6. 调用 DynObjCluster 的 Init 函数，初始化点云聚类相关的参数和数据结构
     Cluster.Init();
     return;
@@ -219,16 +219,14 @@ void DynObjFilter::set_path(string file_path, string file_path_origin)
  */
 void DynObjFilter::filter(PointCloudXYZI::Ptr feats_undistort, const M3D &rot_end, const V3D &pos_end, const double &scan_end_time)
 {
-    double t00 = omp_get_wtime(); // 记录开始时间
-    // 初始化时间和统计变量
-    time_search = time_research = time_search_0 = time_build = time_total = time_other0 = time_interp1 = time_interp2 = 0.0;
-    int num_build = 0, num_search_0 = 0, num_research = 0;
+    double t_filter_begin = omp_get_wtime(); // 记录开始时间
+
     // 如果输入点云为空，则直接返回
     if (feats_undistort == NULL)
         return;
     int size = feats_undistort->points.size(); // 点云大小
 
-    // 如果开启调试模式，则初始化历史点云存储空间
+    // 如果开启调试模式，则初始化 最近历史静态点云存储空间
     if (debug_en)
     {
         laserCloudSteadObj_hist.reset(new PointCloudXYZI());
@@ -242,9 +240,9 @@ void DynObjFilter::filter(PointCloudXYZI::Ptr feats_undistort, const M3D &rot_en
     dyn_tag_cluster.clear();
     dyn_tag_cluster.reserve(size);
     dyn_tag_cluster.resize(size);
-    laserCloudDynObj.reset(new PointCloudXYZI());
 
     // 初始化动态对象和静态对象的点云存储空间
+    laserCloudDynObj.reset(new PointCloudXYZI());
     laserCloudDynObj->reserve(size);
     laserCloudDynObj_world.reset(new PointCloudXYZI());
     laserCloudDynObj_world->reserve(size);
@@ -255,11 +253,11 @@ void DynObjFilter::filter(PointCloudXYZI::Ptr feats_undistort, const M3D &rot_en
     laserCloudSteadObj_clus.reset(new PointCloudXYZI());
     laserCloudSteadObj_clus->reserve(size);
 
-    // 准备输出文件
-    ofstream out;
-    ofstream out_origin;
-    bool is_rec = false;
-    bool is_rec_origin = false;
+    // 准备聚类前后的输出文件流
+    ofstream out;               // 聚类后的文件流
+    ofstream out_origin;        // 聚类前的文件流
+    bool is_rec = false;        // 是否打开聚类后的文件流
+    bool is_rec_origin = false; // 是否打开聚类前的文件流
     if (is_set_path)
     {
         out.open(out_file, ios::out | ios::binary);
@@ -274,31 +272,30 @@ void DynObjFilter::filter(PointCloudXYZI::Ptr feats_undistort, const M3D &rot_en
         }
     }
     // 为性能分析准备时间统计容器
-    time_test1.reserve(size);
-    time_test1.resize(size);
-    time_test2.reserve(size);
-    time_test2.resize(size);
-    time_test3.reserve(size);
-    time_test3.resize(size);
-    time_occ_check.reserve(size);
-    time_occ_check.resize(size);
-    time_map_cons.reserve(size);
-    time_map_cons.resize(size);
-    time_proj.reserve(size);
-    time_proj.resize(size);
-    for (int i = 0; i < size; i++)
-    {
-        time_test1[i] = 0.0;
-        time_test2[i] = 0.0;
-        time_test3[i] = 0.0;
-        time_occ_check[i] = 0.0;
-        time_map_cons[i] = 0.0;
-        time_proj[i] = 0.0;
-    }
+    // time_test1.reserve(size);
+    // time_test1.resize(size);
+    // time_test2.reserve(size);
+    // time_test2.resize(size);
+    // time_test3.reserve(size);
+    // time_test3.resize(size);
+    // time_occ_check.reserve(size);
+    // time_occ_check.resize(size);
+    // time_map_cons.reserve(size);
+    // time_map_cons.resize(size);
+    // time_proj.reserve(size);
+    // time_proj.resize(size);
+    // for (int i = 0; i < size; i++)
+    // {
+    //     time_test1[i] = 0.0;
+    //     time_test2[i] = 0.0;
+    //     time_test3[i] = 0.0;
+    //     time_occ_check[i] = 0.0;
+    //     time_map_cons[i] = 0.0;
+    //     time_proj[i] = 0.0;
+    // }
     int case2_num = 0;
     // 记录开始时间
-    double t0 = omp_get_wtime();
-    double time_case1 = 0, time_case2 = 0, time_case3 = 0;
+    double t_event_detect_begin = omp_get_wtime();
     // 载体系的原始点云
     pcl::PointCloud<PointType> raw_points_world;
     raw_points_world.reserve(size);
@@ -308,26 +305,26 @@ void DynObjFilter::filter(PointCloudXYZI::Ptr feats_undistort, const M3D &rot_en
     {
         index[i] = i;
     }
-    vector<point_soph *> points;
-    points.reserve(size);
-    points.resize(size);
-    point_soph *p = point_soph_pointers[cur_point_soph_pointers];
 
     // 在时间日志中记录当前帧点数
-    if (time_file != "")
-        time_out << size << " "; // rec computation time
+    // if (time_file != "")
+    //     time_out << size << " "; // rec computation time
 
-    // 并行遍历点云，对每个点进行动态性分类
+    // 并行遍历当前点云，对每个点进行动态性分类
+    vector<point_soph *> points; // 用于保存每个经过Event Detect后的所有点的指针
+    points.reserve(size);
+    points.resize(size);
+    point_soph *p = point_soph_pointers[cur_point_soph_pointers]; // 当前帧的指针
+    // std::for_each(std::execution::seq, index.begin(), index.end(), [&](const int &i) // 不使用tbb并行
     std::for_each(std::execution::par, index.begin(), index.end(), [&](const int &i)
-                  // std::for_each(std::execution::seq, index.begin(), index.end(), [&](const int &i)
                   {
         // 获取当前点，并计算世界系坐标
         p[i].reset();
         V3D p_body(feats_undistort->points[i].x, feats_undistort->points[i].y, feats_undistort->points[i].z);
-        int intensity = feats_undistort->points[i].curvature;
+        int curvature = feats_undistort->points[i].curvature;
         V3D p_glob(rot_end * (p_body) + pos_end);
         p[i].glob = p_glob;
-        p[i].dyn = STATIC;      // 默认为静态c
+        p[i].dyn = STATIC;      // 默认为静态
         p[i].rot = rot_end.transpose();
         p[i].transl = pos_end;
         p[i].time = scan_end_time;
@@ -336,13 +333,13 @@ void DynObjFilter::filter(PointCloudXYZI::Ptr feats_undistort, const M3D &rot_en
 
         // kitti特殊处理，判断是否失真
         // 0 for kitti, 1 for nuscenes, 2 for waymo, 3 for avia
-        if(dataset == 0 && fabs(intensity-666) < 10E-4)
+        if(dataset == 0 && fabs(curvature-666) < 10E-4)
         {
-            // 对于KITTI数据集作者可能做了特别处理,把失真的点intensity设置为666
+            // 对于KITTI数据集作者可能做了特别处理,把失真的点curvature设置为666(对应FAST-LIO中扫描过程中由于旋转运动而可能产生角度畸变的点)
             p[i].is_distort = true;
         }
-        // 检查点是否为无效点
-        if (InvalidPointCheck(p_body, intensity))
+        // 检查点是否为自身载体的点-无效点
+        if (InvalidPointCheck(p_body))
         {
             p[i].dyn = INVALID;
             dyn_tag_origin[i] = 0;
@@ -379,8 +376,9 @@ void DynObjFilter::filter(PointCloudXYZI::Ptr feats_undistort, const M3D &rot_en
         points[i] = &p[i]; });
 
     // 在时间日志中记录三种情况动态点检测花费时间
-    if (time_file != "")
-        time_out << omp_get_wtime() - t0 << " "; // rec computation time
+    LOG(INFO) << "Event detection time: " << omp_get_wtime() - t_event_detect_begin << "s";
+    // if (time_file != "")
+    //     time_out << omp_get_wtime() - t_event_detect_begin << " "; // rec computation time
     // 遍历处理后的点，根据其动态状态分类存储
     for (int i = 0; i < size; i++)
     {
@@ -422,7 +420,7 @@ void DynObjFilter::filter(PointCloudXYZI::Ptr feats_undistort, const M3D &rot_en
     }
     int num_1 = 0, num_2 = 0, num_3 = 0, num_inval = 0, num_neag = 0;
     // 记录聚类前的时间，用于计算聚类过程的时间开销
-    double clus_before = omp_get_wtime(); // rec computation time
+    double t_clus_before = omp_get_wtime(); // rec computation time
     // 准备消息头，用于后续的点云发布
     std_msgs::Header header_clus;
     header_clus.stamp = ros::Time().fromSec(scan_end_time); // 设置时间戳
@@ -444,9 +442,9 @@ void DynObjFilter::filter(PointCloudXYZI::Ptr feats_undistort, const M3D &rot_en
             po.curvature = i; // 使用curvature字段暂存点的索引
             switch (points[i]->dyn)
             {
-            case CASE1:                      // 情况1动态点
-                                             // 根据聚类结果判断点是否仍然被认为是动态的
-                if (dyn_tag_cluster[i] == 0) // 情况1动态点
+            case CASE1: // 情况1动态点
+                // 根据聚类结果判断点是否仍然被认为是动态的
+                if (dyn_tag_cluster[i] == 0)
                 {
                     // 更新点的状态为静态
                     points[i]->dyn = STATIC;
@@ -562,21 +560,22 @@ void DynObjFilter::filter(PointCloudXYZI::Ptr feats_undistort, const M3D &rot_en
         }
     }
     // 如果指定了时间记录文件，记录聚类处理结束后到当前时刻的时间差
-    if (time_file != "")
-        time_out << omp_get_wtime() - clus_before << " "; // 记录聚类处理的计算时间
-    double t3 = omp_get_wtime();
+    LOG(INFO) << "Clustering & Region growth time: " << omp_get_wtime() - t_clus_before << "s";
+    // if (time_file != "")
+    //     time_out << omp_get_wtime() - t_clus_before << " "; // 记录聚类处理的计算时间
+    double t_depth_image_constrct_begin = omp_get_wtime();
     // 将处理后的点云数据转换为某种缓冲区格式，为后续步骤做准备
     Points2Buffer(points, index);
-    double t4 = omp_get_wtime();
     // 如果指定了时间记录文件，记录点云数据转换为缓冲区格式的处理时间
-    if (time_file != "")
-        time_out << omp_get_wtime() - t3 << " "; // 记录转换缓冲区的计算时间
+    // if (time_file != "")
+    //     time_out << omp_get_wtime() - t_depth_image_constrct_begin << " "; // 记录转换缓冲区的计算时间
 
     // 将缓冲区数据转换为深度图
     Buffer2DepthMap(scan_end_time);
     // 如果指定了时间记录文件，记录转换深度图的计算时间
-    if (time_file != "")
-        time_out << omp_get_wtime() - t3 << endl; // 记录转换深度图的计算时间
+    LOG(INFO) << "Depth image constrction time: " << omp_get_wtime() - t_depth_image_constrct_begin << "s";
+    // if (time_file != "")
+    //     time_out << omp_get_wtime() - t_depth_image_constrct_begin << endl; // 记录转换深度图的计算时间
 
     // 根据是否启用联合聚类处理动态标签，并将结果写入文件
     if (cluster_coupled)
@@ -612,44 +611,46 @@ void DynObjFilter::filter(PointCloudXYZI::Ptr feats_undistort, const M3D &rot_en
     }
 
     // 计算不同测试阶段的总时间
-    double total_test1 = 0, total_test2 = 0, total_test3 = 0, total_proj = 0, total_occ = 0, total_map = 0;
-    for (int i = 0; i < size; i++)
-    {
-        total_test1 += time_test1[i];
-        total_test2 += time_test2[i];
-        total_test3 += time_test3[i];
-        total_proj += time_proj[i];
-        total_occ += time_occ_check[i];
-        total_map += time_map_cons[i];
-    }
+    // double total_test1 = 0, total_test2 = 0, total_test3 = 0, total_proj = 0, total_occ = 0, total_map = 0;
+    // for (int i = 0; i < size; i++)
+    // {
+    //     total_test1 += time_test1[i];
+    //     total_test2 += time_test2[i];
+    //     total_test3 += time_test3[i];
+    //     total_proj += time_proj[i];
+    //     total_occ += time_occ_check[i];
+    //     total_map += time_map_cons[i];
+    // }
 
     // 如果指定了性能分解文件，记录各个阶段的总时间
-    if (time_breakdown_file != "")
-    {
-        time_breakdown_out << total_test1 << " " << total_test2 << " " << total_test3 << " " << total_proj << " " << total_occ << " " << total_map << endl;
-    }
+    // LOG(INFO) << total_test1 << " " << total_test2 << " " << total_test3 << " " << total_proj << " " << total_occ << " " << total_map;
+    // if (time_breakdown_file != "")
+    // {
+    //     time_breakdown_out << total_test1 << " " << total_test2 << " " << total_test3 << " " << total_proj << " " << total_occ << " " << total_map << endl;
+    // }
 
-    frame_num_for_rec++; // 更新帧数记录
+    // frame_num_for_rec++; // 更新帧数记录
     // 更新点指针索引，准备下一帧数据处理
     cur_point_soph_pointers = (cur_point_soph_pointers + 1) % max_pointers_num;
+
     // 如果启用了记录，关闭文件
     if (is_rec)
         out.close();
+
     // 计算总处理时间，并更新平均处理时间统计
-    time_total = omp_get_wtime() - t00;
+    time_total = omp_get_wtime() - t_filter_begin;
     time_ind++;
     time_total_avr = time_total_avr * (time_ind - 1) / time_ind + time_total / time_ind;
 }
 
 /**
- * @brief 根据与载体原点的距离过近，判断一个点是否是无效的
+ * @brief 根据与载体原点的距离过近(自身载体)，判断一个点是否是无效的
  *
  * @param body 载体坐标
- * @param intensity 强度
  * @return true
  * @return false
  */
-bool DynObjFilter::InvalidPointCheck(const V3D &body, const int intensity)
+bool DynObjFilter::InvalidPointCheck(const V3D &body)
 {
     // 计算点相对于机器人的距离平方
     if ((pow(body(0), 2) + pow(body(1), 2) + pow(body(2), 2)) < blind_dis * blind_dis ||
@@ -2161,128 +2162,120 @@ bool DynObjFilter::Case3VelCheck(float v1, float v2, double delta_t)
     return false;
 }
 
+/**
+ * @brief 将点云数据并行推送到缓冲区中。
+ *
+ * 这个过程利用PARALLEL_Q队列的并行推送方法，以高效地处理大量点云数据。
+ *
+ * @param points 包含点云数据的vector，每个元素是一个指向point_soph对象的指针。
+ * @param index_vector 包含索引的vector，这些索引对应于points中每个点的位置。
+ */
 void DynObjFilter::Points2Buffer(vector<point_soph *> &points, std::vector<int> &index_vector)
 {
+    // 获取当前队列尾部的索引，这个索引是下一个元素应该被插入的位置。c
     int cur_tail = buffer.tail;
+
+    // 准备并行推送操作。这个步骤主要是为了预留足够的空间在队列中，以容纳所有即将被推送的元素，
+    // 并确保在并行推送过程中队列不会超出其容量。
     buffer.push_parallel_prepare(points.size());
+
+    // 使用并行算法遍历索引vector，对于每个索引i，将对应的点（points[i]）推送到缓冲区中的特定位置上。
     std::for_each(std::execution::par, index_vector.begin(), index_vector.end(), [&](const int &i)
-                  { buffer.push_parallel(points[i], cur_tail + i); });
+                  { 
+        // 对于每个索引i，将对应的点points[i]并行推送到队列中。推送位置是当前队列尾部索引cur_tail加上点的索引i，
+        // 这确保了点云数据保持其原始顺序。这里使用的push_parallel方法是PARALLEL_Q队列专为并行操作设计的方法，
+        // 允许多线程安全地向队列的不同位置并行添加元素。
+                    buffer.push_parallel(points[i], cur_tail + i); });
 }
 
+/**
+ * @brief 将一个缓冲区中的点云数据转换为深度图
+ *
+ * @param cur_time 当前帧的时间戳
+ */
 void DynObjFilter::Buffer2DepthMap(double cur_time)
 {
-    int len = buffer.size();
+    int len = buffer.size(); // 缓冲区长度
+
+    // 初始化统计变量
     double total_0 = 0.0;
     double total_1 = 0.0;
     double total_2 = 0.0;
     double total_3 = 0.0;
     double t = 0.0;
     int max_point = 0;
+
+    // 遍历缓冲区中的所有点
     for (int k = 0; k < len; k++)
     {
-        point_soph *point = buffer.front();
+        point_soph *point = buffer.front(); // 取出缓冲区的第一个点
+
+        // 如果当前点的时间与最老的时间差超过了延迟阈值(KITTI1中的值为0.05)
+        // 所以此处在第k帧时处理生成第(k-1)帧的深度图，然后从buffer中剔除第(k-1)帧的点。
         if ((cur_time - point->time) >= buffer_delay - frame_dur / 2.0)
         {
-            if (depth_map_list.size() == 0)
+            // 如果深度图列表为空或者当前点的时间与最新的深度图时间相差足够大，则需要添加新的深度图
+            if (depth_map_list.empty() || (point->time - depth_map_list.back()->time) >= depth_map_dur - frame_dur / 2.0)
             {
-                if (depth_map_list.size() < max_depth_map_num)
+                map_index++;
+                if (depth_map_list.size() >= max_depth_map_num)
                 {
-                    map_index++;
-                    DepthMap::Ptr new_map_pointer(new DepthMap(point->rot, point->transl, point->time, map_index));
-                    depth_map_list.push_back(new_map_pointer);
+                    // 深度图数量达到上限时，重用最旧的深度图
+                    depth_map_list.front()->Reset(point->rot, point->transl, point->time, map_index);
+                    // 将重置后的深度图移动到列表末尾
+                    depth_map_list.push_back(depth_map_list.front());
+                    depth_map_list.pop_front();
                 }
                 else
                 {
-                    buffer.pop();
-                    continue;
-                }
-            }
-            else if ((point->time - depth_map_list.back()->time) >= depth_map_dur - frame_dur / 2.0)
-            {
-                map_index++;
-                if (depth_map_list.size() == max_depth_map_num)
-                {
-                    depth_map_list.front()->Reset(point->rot, point->transl, point->time, map_index);
-                    DepthMap::Ptr new_map_pointer = depth_map_list.front();
-                    depth_map_list.pop_front();
-                    depth_map_list.push_back(new_map_pointer);
-                }
-                else if (depth_map_list.size() < max_depth_map_num)
-                {
+                    // 如果未达到上限，则直接添加新的深度图
                     DepthMap::Ptr new_map_pointer(new DepthMap(point->rot, point->transl, point->time, map_index));
                     depth_map_list.push_back(new_map_pointer);
                 }
             }
+
+            // 根据点的动态类型（静态、CASE1、CASE2、CASE3）进行不同的处理
             switch (point->dyn)
             {
-                if (depth_map_list.back()->depth_map.size() <= point->position)
-                case STATIC:
-                    SphericalProjection(*point, depth_map_list.back()->map_index, depth_map_list.back()->project_R, depth_map_list.back()->project_T, *point);
-                if (depth_map_list.back()->depth_map[point->position].size() < max_pixel_points)
-                {
-                    depth_map_list.back()->depth_map[point->position].push_back(point);
-                    if (point->vec(2) > depth_map_list.back()->max_depth_all[point->position])
-                    {
-                        depth_map_list.back()->max_depth_all[point->position] = point->vec(2);
-                        depth_map_list.back()->max_depth_index_all[point->position] = depth_map_list.back()->depth_map[point->position].size() - 1;
-                    }
-                    if (point->vec(2) < depth_map_list.back()->min_depth_all[point->position] ||
-                        depth_map_list.back()->min_depth_all[point->position] < 10E-5)
-                    {
-                        depth_map_list.back()->min_depth_all[point->position] = point->vec(2);
-                        depth_map_list.back()->min_depth_index_all[point->position] = depth_map_list.back()->depth_map[point->position].size() - 1;
-                    }
-                    if (point->vec(2) < depth_map_list.back()->min_depth_static[point->position] ||
-                        depth_map_list.back()->min_depth_static[point->position] < 10E-5)
-                    {
-                        depth_map_list.back()->min_depth_static[point->position] = point->vec(2);
-                    }
-                    if (point->vec(2) > depth_map_list.back()->max_depth_static[point->position])
-                    {
-                        depth_map_list.back()->max_depth_static[point->position] = point->vec(2);
-                    }
-                }
+            // 静态点的处理
+            case STATIC:
+                // 对静态点进行球面投影并更新深度图信息
+                SphericalProjection(*point, depth_map_list.back()->map_index, depth_map_list.back()->project_R, depth_map_list.back()->project_T, *point);
+                UpdateDepthInfo(point, depth_map_list.back(), true); // 对静态点调用，并传递true
                 break;
             case CASE1:
-
             case CASE2:
-
             case CASE3:
+                // 对动态点进行球面投影并更新深度图信息
                 SphericalProjection(*point, depth_map_list.back()->map_index, depth_map_list.back()->project_R, depth_map_list.back()->project_T, *point);
-                if (depth_map_list.back()->depth_map[point->position].size() < max_pixel_points)
-                {
-                    depth_map_list.back()->depth_map[point->position].push_back(point);
-                    if (point->vec(2) > depth_map_list.back()->max_depth_all[point->position])
-                    {
-                        depth_map_list.back()->max_depth_all[point->position] = point->vec(2);
-                        depth_map_list.back()->max_depth_index_all[point->position] = depth_map_list.back()->depth_map[point->position].size() - 1;
-                    }
-                    if (point->vec(2) < depth_map_list.back()->min_depth_all[point->position] ||
-                        depth_map_list.back()->min_depth_all[point->position] < 10E-5)
-                    {
-                        depth_map_list.back()->min_depth_all[point->position] = point->vec(2);
-                        depth_map_list.back()->min_depth_index_all[point->position] = depth_map_list.back()->depth_map[point->position].size() - 1;
-                    }
-                }
+                UpdateDepthInfo(point, depth_map_list.back(), false); // 对动态点调用，并传递false
                 break;
             default:
+                // 对于未定义的点类型不做处理
                 break;
             }
+            // 处理完毕后，将点从缓冲区中移除
             buffer.pop();
         }
         else
         {
+            // 如果当前点的时间未满足条件，则跳出循环
             break;
         }
     }
+
+    // 如果开启了调试模式，将处理后的点云数据添加到历史点云中，以便于后续分析
     if (debug_en)
     {
+        // 遍历深度图队列
         for (int i = 0; i < depth_map_list.size(); i++)
         {
+            // 遍历深度图中的每个点
             for (int j = 0; j < depth_map_list[i]->depth_map.size(); j++)
             {
                 for (int k = 0; k < depth_map_list[i]->depth_map[j].size(); k++)
                 {
+                    // 创建新点，设置其属性，并添加到历史点云中
                     PointType po;
                     point_soph *point = depth_map_list[i]->depth_map[j][k];
                     po.x = point->glob(0);
@@ -2301,11 +2294,67 @@ void DynObjFilter::Buffer2DepthMap(double cur_time)
     }
 }
 
+/**
+ * @brief 更新深度图中指定位置的深度信息。
+ * 
+ * @param point 指向当前点的指针，包含该点的空间位置和其他信息。
+ * @param currentDepthMap 指向当前深度图对象的智能指针，深度图对象存储了整个场景的深度信息。
+ * @param isStatic 布尔值，指示当前点是否为静态点。如果为true，表示该点为静态点；如果为false，则表示该点为动态点。
+ * 
+ * 该函数首先检查当前位置是否已有深度信息存储。如果没有，直接返回。
+ * 
+ * 接下来，如果当前位置的深度点数未达到上限，则将当前点添加到该位置的深度信息中。同时，根据该点的深度值（point->vec(2)），
+ * 更新该位置的最大和最小深度值。特别地，如果该点为静态点（isStatic为true），则会更新静态点的最小和最大深度值。
+ * 
+ * 如果当前点的深度值超过了该位置已记录的所有点的最大深度值，或者小于最小深度值，相应地更新这些深度值。对于静态点，
+ * 还会额外更新静态点的最小和最大深度值，以便在处理静态场景时可以有更准确的深度参考。
+ */
+void DynObjFilter::UpdateDepthInfo(point_soph *point, DepthMap::Ptr &currentDepthMap, bool isStatic)
+{
+    // 检查当前位置是否已有深度信息存储
+    if (currentDepthMap->depth_map.size() <= point->position)
+    {
+        return; // 如果没有，直接返回。
+    }
+
+    // 如果当前位置的深度点数未达到上限，则添加点到深度图中
+    if (currentDepthMap->depth_map[point->position].size() < max_pixel_points)
+    {
+        currentDepthMap->depth_map[point->position].push_back(point);
+
+        // 更新该位置的最大深度值
+        if (point->vec(2) > currentDepthMap->max_depth_all[point->position])
+        {
+            currentDepthMap->max_depth_all[point->position] = point->vec(2);
+            currentDepthMap->max_depth_index_all[point->position] = currentDepthMap->depth_map[point->position].size() - 1;
+        }
+        // 更新该位置的最小深度值
+        if (point->vec(2) < currentDepthMap->min_depth_all[point->position] || currentDepthMap->min_depth_all[point->position] < 10E-5)
+        {
+            currentDepthMap->min_depth_all[point->position] = point->vec(2);
+            currentDepthMap->min_depth_index_all[point->position] = currentDepthMap->depth_map[point->position].size() - 1;
+        }
+
+        // 针对静态点进行特殊处理，更新静态点的最小和最大深度值
+        if (isStatic)
+        {
+            if (point->vec(2) < currentDepthMap->min_depth_static[point->position] || currentDepthMap->min_depth_static[point->position] < 10E-5)
+            {
+                currentDepthMap->min_depth_static[point->position] = point->vec(2);
+            }
+            if (point->vec(2) > currentDepthMap->max_depth_static[point->position])
+            {
+                currentDepthMap->max_depth_static[point->position] = point->vec(2);
+            }
+        }
+    }
+}
+
 void DynObjFilter::publish_dyn(const ros::Publisher &pub_point_out, const ros::Publisher &pub_frame_out, const ros::Publisher &pub_steady_points, const double &scan_end_time)
 {
     if (cluster_coupled) // pubLaserCloudEffect pub_pcl_dyn_extend  pubLaserCloudEffect_depth
     {
-        cout << "Found Dynamic Objects, numbers: " << laserCloudDynObj_clus->points.size() << " Total time: " << time_total << " Average total time: " << time_total_avr << endl;
+        LOG(INFO) << "Found Dynamic Objects, numbers: " << laserCloudDynObj_clus->points.size() << " Total time: " << time_total << " Average total time: " << time_total_avr;
     }
     else
     {
@@ -2384,4 +2433,3 @@ void DynObjFilter::publish_dyn(const ros::Publisher &pub_point_out, const ros::P
     laserCloudFullRes2.header.frame_id = frame_id;
     pub_steady_points.publish(laserCloudFullRes2);
 }
-

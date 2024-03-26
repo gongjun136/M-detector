@@ -88,8 +88,8 @@ public:
     int cur_frame = 0;
     float thrustable_thresold = 0.3f;
     std::string out_file = "";      // 
-    std::ofstream out;                                      // 输出文件流
-    bool debug_en{false};
+    std::ofstream out;              // 输出文件流
+    bool debug_en{false};           // 是否调试                
     std_msgs::Header header;
     Eigen::Matrix3d odom_rot;
     Eigen::Vector3d odom_pos;

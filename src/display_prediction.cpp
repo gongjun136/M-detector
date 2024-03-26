@@ -2,7 +2,7 @@
  * @Author: gongjun136 gongjun136@gmail.com
  * @Date: 2024-03-22 16:21:25
  * @LastEditors: gongjun136 gongjun136@gmail.com
- * @LastEditTime: 2024-03-22 16:57:19
+ * @LastEditTime: 2024-03-25 14:23:46
  * @FilePath: /catkin_ws_M-detector/src/M-detector-noted/src/display_prediction.cpp
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -43,7 +43,7 @@ PointCloudXYZI::Ptr last_pc(new PointCloudXYZI());
 ros::Publisher pub_pointcloud, pub_marker, pub_iou_view, pub_static, pub_dynamic;
 ros::Publisher pub_tp, pub_fp, pub_fn, pub_tn;
 
-string frame_id = "camera_init";
+string frame_id = "camera_init";        // 参考坐标系名字
 // label_folder：真实标签结果目录，pred_folder：预测标签结果目录
 string label_folder, pred_folder;
 // string pc_folder, iou_file;

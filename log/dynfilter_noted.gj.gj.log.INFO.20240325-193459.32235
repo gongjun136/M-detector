@@ -1,0 +1,438 @@
+Log file created at: 2024/03/25 19:34:59
+Running on machine: gj
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0325 19:34:59.581832 32235 dynfilter_with_odom.cpp:97] -----------cur frame(0) size: 121448--------------: 0
+I0325 19:34:59.591555 32235 dyn_obj_filter.cpp:379] Event detection time: 0.00919162s
+I0325 19:34:59.606237 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.00920479s
+I0325 19:34:59.606781 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.000501609s
+I0325 19:34:59.607123 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 0 Total time: 0.0250169 Average total time: 0.0250169
+I0325 19:34:59.725548 32235 dynfilter_with_odom.cpp:97] -----------cur frame(1) size: 121461--------------: 1
+I0325 19:34:59.732131 32235 dyn_obj_filter.cpp:379] Event detection time: 0.00648689s
+I0325 19:34:59.746138 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0081826s
+I0325 19:34:59.773793 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0276211s
+I0325 19:34:59.774123 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 0 Total time: 0.0485199 Average total time: 0.0367684
+I0325 19:34:59.821280 32235 dynfilter_with_odom.cpp:97] -----------cur frame(2) size: 121524--------------: 2
+I0325 19:34:59.841703 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0203265s
+I0325 19:34:59.856467 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.00942331s
+I0325 19:34:59.890921 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0343581s
+I0325 19:34:59.891209 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 0 Total time: 0.0698751 Average total time: 0.047804
+I0325 19:34:59.972420 32235 dynfilter_with_odom.cpp:97] -----------cur frame(3) size: 121488--------------: 3
+I0325 19:34:59.994371 32235 dyn_obj_filter.cpp:379] Event detection time: 0.021831s
+I0325 19:35:00.021548 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0223384s
+I0325 19:35:00.057160 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0354891s
+I0325 19:35:00.057397 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 362 Total time: 0.084904 Average total time: 0.057079
+I0325 19:35:00.121186 32235 dynfilter_with_odom.cpp:97] -----------cur frame(4) size: 121513--------------: 4
+I0325 19:35:00.146057 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0247735s
+I0325 19:35:00.165750 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0153149s
+I0325 19:35:00.193588 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0277731s
+I0325 19:35:00.194041 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 551 Total time: 0.0727805 Average total time: 0.0602193
+I0325 19:35:00.282867 32235 dynfilter_with_odom.cpp:97] -----------cur frame(5) size: 121548--------------: 5
+I0325 19:35:00.323148 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0401156s
+I0325 19:35:00.349246 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0192792s
+I0325 19:35:00.389130 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0398287s
+I0325 19:35:00.389387 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 483 Total time: 0.106429 Average total time: 0.0679208
+I0325 19:35:00.488947 32235 dynfilter_with_odom.cpp:97] -----------cur frame(6) size: 121645--------------: 6
+I0325 19:35:00.520216 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0311415s
+I0325 19:35:00.541417 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0168472s
+I0325 19:35:00.574298 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0328198s
+I0325 19:35:00.574573 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 487 Total time: 0.0855558 Average total time: 0.0704401
+I0325 19:35:00.659761 32235 dynfilter_with_odom.cpp:97] -----------cur frame(7) size: 121565--------------: 7
+I0325 19:35:00.699000 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0391214s
+I0325 19:35:00.721575 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.015169s
+I0325 19:35:00.748275 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0266184s
+I0325 19:35:00.748562 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 454 Total time: 0.0887261 Average total time: 0.0727258
+I0325 19:35:00.843719 32235 dynfilter_with_odom.cpp:97] -----------cur frame(8) size: 121487--------------: 8
+I0325 19:35:00.883756 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0398359s
+I0325 19:35:00.905969 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0141062s
+I0325 19:35:00.935353 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0293046s
+I0325 19:35:00.935783 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 492 Total time: 0.0918912 Average total time: 0.0748553
+I0325 19:35:01.013532 32235 dynfilter_with_odom.cpp:97] -----------cur frame(9) size: 121299--------------: 9
+I0325 19:35:01.062714 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0490635s
+I0325 19:35:01.089593 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0204744s
+I0325 19:35:01.122087 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0323926s
+I0325 19:35:01.122400 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 542 Total time: 0.10881 Average total time: 0.0782507
+I0325 19:35:01.212322 32235 dynfilter_with_odom.cpp:97] -----------cur frame(10) size: 121289--------------: 10
+I0325 19:35:01.259618 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0472124s
+I0325 19:35:01.277783 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0128798s
+I0325 19:35:01.299271 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.021449s
+I0325 19:35:01.299700 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1192 Total time: 0.0873088 Average total time: 0.0790742
+I0325 19:35:01.376083 32235 dynfilter_with_odom.cpp:97] -----------cur frame(11) size: 121156--------------: 11
+I0325 19:35:01.429967 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0537553s
+I0325 19:35:01.453222 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0158054s
+I0325 19:35:01.477958 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0246639s
+I0325 19:35:01.478207 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1110 Total time: 0.102032 Average total time: 0.0809873
+I0325 19:35:01.551481 32235 dynfilter_with_odom.cpp:97] -----------cur frame(12) size: 121181--------------: 12
+I0325 19:35:01.602667 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0510764s
+I0325 19:35:01.621078 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0131307s
+I0325 19:35:01.643790 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0226594s
+I0325 19:35:01.644033 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1026 Total time: 0.0924801 Average total time: 0.0818714
+I0325 19:35:01.715639 32235 dynfilter_with_odom.cpp:97] -----------cur frame(13) size: 120787--------------: 13
+I0325 19:35:01.760560 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0448132s
+I0325 19:35:01.780319 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0145707s
+I0325 19:35:01.798027 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0176684s
+I0325 19:35:01.798272 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 983 Total time: 0.0825672 Average total time: 0.0819211
+I0325 19:35:01.863375 32235 dynfilter_with_odom.cpp:97] -----------cur frame(14) size: 120845--------------: 14
+I0325 19:35:01.909953 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0464692s
+I0325 19:35:01.928436 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0134589s
+I0325 19:35:01.947738 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0192626s
+I0325 19:35:01.948015 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 957 Total time: 0.0845713 Average total time: 0.0820978
+I0325 19:35:02.009847 32235 dynfilter_with_odom.cpp:97] -----------cur frame(15) size: 120500--------------: 15
+I0325 19:35:02.048777 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0388208s
+I0325 19:35:02.066594 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0135941s
+I0325 19:35:02.083575 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0169314s
+I0325 19:35:02.083801 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 777 Total time: 0.0738934 Average total time: 0.081585
+I0325 19:35:02.150018 32235 dynfilter_with_odom.cpp:97] -----------cur frame(16) size: 120327--------------: 16
+I0325 19:35:02.200088 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0499583s
+I0325 19:35:02.220597 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0159023s
+I0325 19:35:02.240433 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0197627s
+I0325 19:35:02.240675 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 802 Total time: 0.0905924 Average total time: 0.0821149
+I0325 19:35:02.308130 32235 dynfilter_with_odom.cpp:97] -----------cur frame(17) size: 120587--------------: 17
+I0325 19:35:02.350905 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0426626s
+I0325 19:35:02.370893 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0164069s
+I0325 19:35:02.391296 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0203445s
+I0325 19:35:02.391528 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 2136 Total time: 0.0833304 Average total time: 0.0821824
+I0325 19:35:02.461019 32235 dynfilter_with_odom.cpp:97] -----------cur frame(18) size: 120426--------------: 18
+I0325 19:35:02.508478 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0473157s
+I0325 19:35:02.532140 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0187705s
+I0325 19:35:02.552263 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0200617s
+I0325 19:35:02.552515 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1977 Total time: 0.0914039 Average total time: 0.0826677
+I0325 19:35:02.619135 32235 dynfilter_with_odom.cpp:97] -----------cur frame(19) size: 120358--------------: 19
+I0325 19:35:02.662853 32235 dyn_obj_filter.cpp:379] Event detection time: 0.043615s
+I0325 19:35:02.683704 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0151074s
+I0325 19:35:02.707056 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0233109s
+I0325 19:35:02.707463 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1832 Total time: 0.0882592 Average total time: 0.0829473
+I0325 19:35:02.768659 32235 dynfilter_with_odom.cpp:97] -----------cur frame(20) size: 120239--------------: 20
+I0325 19:35:02.816771 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0479777s
+I0325 19:35:02.840409 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0183298s
+I0325 19:35:02.858285 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0178328s
+I0325 19:35:02.858530 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1663 Total time: 0.0897885 Average total time: 0.0832731
+I0325 19:35:02.924391 32235 dynfilter_with_odom.cpp:97] -----------cur frame(21) size: 119885--------------: 21
+I0325 19:35:02.964902 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0404183s
+I0325 19:35:02.983566 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0142762s
+I0325 19:35:03.000706 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0170968s
+I0325 19:35:03.000983 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1464 Total time: 0.0765285 Average total time: 0.0829665
+I0325 19:35:03.057369 32235 dynfilter_with_odom.cpp:97] -----------cur frame(22) size: 120039--------------: 22
+I0325 19:35:03.103191 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0457117s
+I0325 19:35:03.122515 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0154112s
+I0325 19:35:03.141105 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0185322s
+I0325 19:35:03.141337 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1421 Total time: 0.0839022 Average total time: 0.0830072
+I0325 19:35:03.203037 32235 dynfilter_with_odom.cpp:97] -----------cur frame(23) size: 119831--------------: 23
+I0325 19:35:03.245383 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0422153s
+I0325 19:35:03.263659 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0146936s
+I0325 19:35:03.281915 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0182044s
+I0325 19:35:03.282224 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1333 Total time: 0.079126 Average total time: 0.0828455
+I0325 19:35:03.346856 32235 dynfilter_with_odom.cpp:97] -----------cur frame(24) size: 119749--------------: 24
+I0325 19:35:03.394214 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0472555s
+I0325 19:35:03.414618 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0154346s
+I0325 19:35:03.431387 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0167157s
+I0325 19:35:03.431609 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1271 Total time: 0.0846916 Average total time: 0.0829193
+I0325 19:35:03.489279 32235 dynfilter_with_odom.cpp:97] -----------cur frame(25) size: 119454--------------: 25
+I0325 19:35:03.538514 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0491387s
+I0325 19:35:03.557607 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0141328s
+I0325 19:35:03.574527 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0168707s
+I0325 19:35:03.574782 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1237 Total time: 0.0854432 Average total time: 0.0830164
+I0325 19:35:03.643108 32235 dynfilter_with_odom.cpp:97] -----------cur frame(26) size: 119440--------------: 26
+I0325 19:35:03.692535 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0493017s
+I0325 19:35:03.714857 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0185398s
+I0325 19:35:03.733369 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0184535s
+I0325 19:35:03.733634 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 2304 Total time: 0.090461 Average total time: 0.0832921
+I0325 19:35:03.801026 32235 dynfilter_with_odom.cpp:97] -----------cur frame(27) size: 119548--------------: 27
+I0325 19:35:03.847877 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0467423s
+I0325 19:35:03.869983 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.017159s
+I0325 19:35:03.889168 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0191394s
+I0325 19:35:03.889425 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 2057 Total time: 0.0883359 Average total time: 0.0834722
+I0325 19:35:03.961156 32235 dynfilter_with_odom.cpp:97] -----------cur frame(28) size: 119907--------------: 28
+I0325 19:35:04.014655 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0533528s
+I0325 19:35:04.038822 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0201171s
+I0325 19:35:04.060622 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0217565s
+I0325 19:35:04.061002 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1562 Total time: 0.0997624 Average total time: 0.084034
+I0325 19:35:04.133394 32235 dynfilter_with_odom.cpp:97] -----------cur frame(29) size: 119560--------------: 29
+I0325 19:35:04.180696 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0471589s
+I0325 19:35:04.200721 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.016023s
+I0325 19:35:04.220093 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0193067s
+I0325 19:35:04.220513 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1405 Total time: 0.0870266 Average total time: 0.0841337
+I0325 19:35:04.284799 32235 dynfilter_with_odom.cpp:97] -----------cur frame(30) size: 119305--------------: 30
+I0325 19:35:04.335860 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0509518s
+I0325 19:35:04.362107 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0198964s
+I0325 19:35:04.383347 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.021159s
+I0325 19:35:04.383577 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1275 Total time: 0.0987038 Average total time: 0.0846037
+I0325 19:35:04.453101 32235 dynfilter_with_odom.cpp:97] -----------cur frame(31) size: 119142--------------: 31
+I0325 19:35:04.514199 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0609773s
+I0325 19:35:04.553045 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0313895s
+I0325 19:35:04.580963 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0278419s
+I0325 19:35:04.581195 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1364 Total time: 0.128024 Average total time: 0.0859606
+I0325 19:35:04.652360 32235 dynfilter_with_odom.cpp:97] -----------cur frame(32) size: 118962--------------: 32
+I0325 19:35:04.703409 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0508247s
+I0325 19:35:04.725987 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0174075s
+I0325 19:35:04.747156 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0210717s
+I0325 19:35:04.747398 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 889 Total time: 0.0948504 Average total time: 0.08623
+I0325 19:35:04.815233 32235 dynfilter_with_odom.cpp:97] -----------cur frame(33) size: 118849--------------: 33
+I0325 19:35:04.860730 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0454001s
+I0325 19:35:04.881089 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0149347s
+I0325 19:35:04.897179 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0160378s
+I0325 19:35:04.897415 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 2003 Total time: 0.0821109 Average total time: 0.0861089
+I0325 19:35:04.956728 32235 dynfilter_with_odom.cpp:97] -----------cur frame(34) size: 118620--------------: 34
+I0325 19:35:05.000535 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0437022s
+I0325 19:35:05.019650 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0130062s
+I0325 19:35:05.042610 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0228879s
+I0325 19:35:05.042850 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1867 Total time: 0.0860521 Average total time: 0.0861072
+I0325 19:35:05.107221 32235 dynfilter_with_odom.cpp:97] -----------cur frame(35) size: 118684--------------: 35
+I0325 19:35:05.147189 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0398626s
+I0325 19:35:05.165760 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0148011s
+I0325 19:35:05.182410 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0165833s
+I0325 19:35:05.182633 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1792 Total time: 0.0753491 Average total time: 0.0858084
+I0325 19:35:05.255667 32235 dynfilter_with_odom.cpp:97] -----------cur frame(36) size: 118679--------------: 36
+I0325 19:35:05.300308 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0445225s
+I0325 19:35:05.323446 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0177723s
+I0325 19:35:05.348542 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0250418s
+I0325 19:35:05.348793 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1642 Total time: 0.0930522 Average total time: 0.0860042
+I0325 19:35:05.432766 32235 dynfilter_with_odom.cpp:97] -----------cur frame(37) size: 118680--------------: 37
+I0325 19:35:05.475878 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0428032s
+I0325 19:35:05.500197 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0193706s
+I0325 19:35:05.520327 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0200651s
+I0325 19:35:05.520606 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1665 Total time: 0.0877527 Average total time: 0.0860502
+I0325 19:35:05.585633 32235 dynfilter_with_odom.cpp:97] -----------cur frame(38) size: 118329--------------: 38
+I0325 19:35:05.635195 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0494459s
+I0325 19:35:05.655887 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0154648s
+I0325 19:35:05.676262 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.020302s
+I0325 19:35:05.676504 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1607 Total time: 0.0907999 Average total time: 0.086172
+I0325 19:35:05.749471 32235 dynfilter_with_odom.cpp:97] -----------cur frame(39) size: 118288--------------: 39
+I0325 19:35:05.808537 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0589118s
+I0325 19:35:05.832703 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0198811s
+I0325 19:35:05.857162 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0244141s
+I0325 19:35:05.857425 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1647 Total time: 0.107837 Average total time: 0.0867136
+I0325 19:35:05.944527 32235 dynfilter_with_odom.cpp:97] -----------cur frame(40) size: 118465--------------: 40
+I0325 19:35:05.992794 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0481448s
+I0325 19:35:06.014056 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0168132s
+I0325 19:35:06.034776 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0206541s
+I0325 19:35:06.035017 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1569 Total time: 0.0904201 Average total time: 0.086804
+I0325 19:35:06.098858 32235 dynfilter_with_odom.cpp:97] -----------cur frame(41) size: 118237--------------: 41
+I0325 19:35:06.145799 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0468183s
+I0325 19:35:06.169075 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0198412s
+I0325 19:35:06.186704 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0175795s
+I0325 19:35:06.187004 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 2120 Total time: 0.08807 Average total time: 0.0868342
+I0325 19:35:06.255728 32235 dynfilter_with_odom.cpp:97] -----------cur frame(42) size: 118208--------------: 42
+I0325 19:35:06.298627 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0427609s
+I0325 19:35:06.322135 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0180002s
+I0325 19:35:06.342823 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0206261s
+I0325 19:35:06.343041 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1663 Total time: 0.087235 Average total time: 0.0868435
+I0325 19:35:06.411324 32235 dynfilter_with_odom.cpp:97] -----------cur frame(43) size: 118217--------------: 43
+I0325 19:35:06.453258 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0418405s
+I0325 19:35:06.475611 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0174963s
+I0325 19:35:06.492466 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0167994s
+I0325 19:35:06.492748 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1558 Total time: 0.0813557 Average total time: 0.0867188
+I0325 19:35:06.593413 32235 dynfilter_with_odom.cpp:97] -----------cur frame(44) size: 118204--------------: 44
+I0325 19:35:06.652850 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0591172s
+I0325 19:35:06.679546 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.019668s
+I0325 19:35:06.707212 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0276206s
+I0325 19:35:06.707640 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1572 Total time: 0.114082 Average total time: 0.0873268
+I0325 19:35:06.789661 32235 dynfilter_with_odom.cpp:97] -----------cur frame(45) size: 118044--------------: 45
+I0325 19:35:06.834782 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0450137s
+I0325 19:35:06.862289 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0217629s
+I0325 19:35:06.887144 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.024817s
+I0325 19:35:06.887452 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1526 Total time: 0.0977269 Average total time: 0.0875529
+I0325 19:35:06.962236 32235 dynfilter_with_odom.cpp:97] -----------cur frame(46) size: 118040--------------: 46
+I0325 19:35:07.008431 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0460608s
+I0325 19:35:07.033450 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0202152s
+I0325 19:35:07.057406 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0238858s
+I0325 19:35:07.057961 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1536 Total time: 0.0956397 Average total time: 0.087725
+I0325 19:35:07.129081 32235 dynfilter_with_odom.cpp:97] -----------cur frame(47) size: 117700--------------: 47
+I0325 19:35:07.179864 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0506537s
+I0325 19:35:07.205734 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0223151s
+I0325 19:35:07.225590 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0198169s
+I0325 19:35:07.225840 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1479 Total time: 0.0966779 Average total time: 0.0879115
+I0325 19:35:07.296934 32235 dynfilter_with_odom.cpp:97] -----------cur frame(48) size: 117705--------------: 48
+I0325 19:35:07.345026 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0478922s
+I0325 19:35:07.365265 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0161789s
+I0325 19:35:07.385330 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0200223s
+I0325 19:35:07.385600 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1479 Total time: 0.0885691 Average total time: 0.0879249
+I0325 19:35:07.462113 32235 dynfilter_with_odom.cpp:97] -----------cur frame(49) size: 117677--------------: 49
+I0325 19:35:07.510273 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0480507s
+I0325 19:35:07.534188 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0185452s
+I0325 19:35:07.564507 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0302895s
+I0325 19:35:07.565102 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1417 Total time: 0.102895 Average total time: 0.0882243
+I0325 19:35:07.643329 32235 dynfilter_with_odom.cpp:97] -----------cur frame(50) size: 117604--------------: 50
+I0325 19:35:07.694046 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0505912s
+I0325 19:35:07.720098 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0209328s
+I0325 19:35:07.750128 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0299987s
+I0325 19:35:07.750707 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1394 Total time: 0.107231 Average total time: 0.088597
+I0325 19:35:07.831938 32235 dynfilter_with_odom.cpp:97] -----------cur frame(51) size: 117531--------------: 51
+I0325 19:35:07.875517 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0434707s
+I0325 19:35:07.896998 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0161753s
+I0325 19:35:07.916983 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0199565s
+I0325 19:35:07.917294 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1489 Total time: 0.0852859 Average total time: 0.0885333
+I0325 19:35:07.986194 32235 dynfilter_with_odom.cpp:97] -----------cur frame(52) size: 117427--------------: 52
+I0325 19:35:08.032487 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0461691s
+I0325 19:35:08.056799 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0193247s
+I0325 19:35:08.081496 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0246381s
+I0325 19:35:08.081728 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1440 Total time: 0.0954576 Average total time: 0.088664
+I0325 19:35:08.159719 32235 dynfilter_with_odom.cpp:97] -----------cur frame(53) size: 117424--------------: 53
+I0325 19:35:08.210273 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0504249s
+I0325 19:35:08.229791 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0156959s
+I0325 19:35:08.251309 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0214851s
+I0325 19:35:08.251721 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1454 Total time: 0.0919199 Average total time: 0.0887243
+I0325 19:35:08.326459 32235 dynfilter_with_odom.cpp:97] -----------cur frame(54) size: 117267--------------: 54
+I0325 19:35:08.366634 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0400505s
+I0325 19:35:08.386102 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.014581s
+I0325 19:35:08.405584 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0194298s
+I0325 19:35:08.405908 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1473 Total time: 0.0793683 Average total time: 0.0885542
+I0325 19:35:08.464241 32235 dynfilter_with_odom.cpp:97] -----------cur frame(55) size: 117360--------------: 55
+I0325 19:35:08.510365 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0460215s
+I0325 19:35:08.530781 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.015271s
+I0325 19:35:08.552752 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0219088s
+I0325 19:35:08.553149 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1540 Total time: 0.0888431 Average total time: 0.0885593
+I0325 19:35:08.622140 32235 dynfilter_with_odom.cpp:97] -----------cur frame(56) size: 117237--------------: 56
+I0325 19:35:08.666374 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0441223s
+I0325 19:35:08.687565 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0166675s
+I0325 19:35:08.707542 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0199041s
+I0325 19:35:08.707798 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1553 Total time: 0.0855765 Average total time: 0.088507
+I0325 19:35:08.773770 32235 dynfilter_with_odom.cpp:97] -----------cur frame(57) size: 117149--------------: 57
+I0325 19:35:08.823597 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0497123s
+I0325 19:35:08.845738 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0167985s
+I0325 19:35:08.867455 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0216714s
+I0325 19:35:08.867707 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1526 Total time: 0.0938627 Average total time: 0.0885993
+I0325 19:35:08.954803 32235 dynfilter_with_odom.cpp:97] -----------cur frame(58) size: 117203--------------: 58
+I0325 19:35:09.000631 32235 dyn_obj_filter.cpp:379] Event detection time: 0.045686s
+I0325 19:35:09.028133 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0220871s
+I0325 19:35:09.053231 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0250314s
+I0325 19:35:09.053818 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1557 Total time: 0.098923 Average total time: 0.0887743
+I0325 19:35:09.127605 32235 dynfilter_with_odom.cpp:97] -----------cur frame(59) size: 117227--------------: 59
+I0325 19:35:09.166569 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0387433s
+I0325 19:35:09.187752 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.01536s
+I0325 19:35:09.206732 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0189219s
+I0325 19:35:09.206986 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1522 Total time: 0.0792548 Average total time: 0.0886156
+I0325 19:35:09.277601 32235 dynfilter_with_odom.cpp:97] -----------cur frame(60) size: 117257--------------: 60
+I0325 19:35:09.319435 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0416506s
+I0325 19:35:09.343700 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0189469s
+I0325 19:35:09.361284 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0175395s
+I0325 19:35:09.361529 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1563 Total time: 0.0838228 Average total time: 0.0885371
+I0325 19:35:09.433318 32235 dynfilter_with_odom.cpp:97] -----------cur frame(61) size: 117261--------------: 61
+I0325 19:35:09.473004 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0395741s
+I0325 19:35:09.494019 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0166945s
+I0325 19:35:09.512557 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0184641s
+I0325 19:35:09.512773 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1581 Total time: 0.0793814 Average total time: 0.0883894
+I0325 19:35:09.574883 32235 dynfilter_with_odom.cpp:97] -----------cur frame(62) size: 117087--------------: 62
+I0325 19:35:09.618541 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0435349s
+I0325 19:35:09.644240 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0196875s
+I0325 19:35:09.662923 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0186035s
+I0325 19:35:09.663156 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1592 Total time: 0.0881969 Average total time: 0.0883863
+I0325 19:35:09.725234 32235 dynfilter_with_odom.cpp:97] -----------cur frame(63) size: 116994--------------: 63
+I0325 19:35:09.764289 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0389154s
+I0325 19:35:09.790740 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.022211s
+I0325 19:35:09.812192 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0213951s
+I0325 19:35:09.812410 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1663 Total time: 0.0870802 Average total time: 0.0883659
+I0325 19:35:09.877331 32235 dynfilter_with_odom.cpp:97] -----------cur frame(64) size: 116738--------------: 64
+I0325 19:35:09.919202 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0417305s
+I0325 19:35:09.938970 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0161181s
+I0325 19:35:09.956082 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0170573s
+I0325 19:35:09.956290 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1738 Total time: 0.0788672 Average total time: 0.0882198
+I0325 19:35:10.014885 32235 dynfilter_with_odom.cpp:97] -----------cur frame(65) size: 116512--------------: 65
+I0325 19:35:10.053772 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0387643s
+I0325 19:35:10.078812 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.021573s
+I0325 19:35:10.097179 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0183165s
+I0325 19:35:10.097425 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1875 Total time: 0.0824692 Average total time: 0.0881327
+I0325 19:35:10.152285 32235 dynfilter_with_odom.cpp:97] -----------cur frame(66) size: 116269--------------: 66
+I0325 19:35:10.192605 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0402215s
+I0325 19:35:10.212474 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0158365s
+I0325 19:35:10.229444 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0169183s
+I0325 19:35:10.229697 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 1992 Total time: 0.0773519 Average total time: 0.0879718
+I0325 19:35:10.292856 32235 dynfilter_with_odom.cpp:97] -----------cur frame(67) size: 116283--------------: 67
+I0325 19:35:10.331270 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0382994s
+I0325 19:35:10.362396 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0272676s
+I0325 19:35:10.382259 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0198089s
+I0325 19:35:10.382514 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 2157 Total time: 0.0895722 Average total time: 0.0879953
+I0325 19:35:10.451303 32235 dynfilter_with_odom.cpp:97] -----------cur frame(68) size: 116093--------------: 68
+I0325 19:35:10.495642 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0442227s
+I0325 19:35:10.521687 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0223618s
+I0325 19:35:10.541253 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0195151s
+I0325 19:35:10.541481 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 2300 Total time: 0.0901133 Average total time: 0.088026
+I0325 19:35:10.609334 32235 dynfilter_with_odom.cpp:97] -----------cur frame(69) size: 115784--------------: 69
+I0325 19:35:10.648787 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0393347s
+I0325 19:35:10.667310 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0151s
+I0325 19:35:10.682399 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0150212s
+I0325 19:35:10.682629 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 2582 Total time: 0.0732394 Average total time: 0.0878148
+I0325 19:35:10.746551 32235 dynfilter_with_odom.cpp:97] -----------cur frame(70) size: 115470--------------: 70
+I0325 19:35:10.784658 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0379684s
+I0325 19:35:10.808737 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0208358s
+I0325 19:35:10.823841 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0150608s
+I0325 19:35:10.824067 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 2762 Total time: 0.0774192 Average total time: 0.0876683
+I0325 19:35:10.884330 32235 dynfilter_with_odom.cpp:97] -----------cur frame(71) size: 115024--------------: 71
+I0325 19:35:10.927515 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0430587s
+I0325 19:35:10.954344 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0221902s
+I0325 19:35:10.973299 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0189031s
+I0325 19:35:10.973770 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 2986 Total time: 0.0893657 Average total time: 0.0876919
+I0325 19:35:11.032128 32235 dynfilter_with_odom.cpp:97] -----------cur frame(72) size: 114520--------------: 72
+I0325 19:35:11.078577 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0463381s
+I0325 19:35:11.100486 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0182123s
+I0325 19:35:11.121449 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0208715s
+I0325 19:35:11.121681 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 3096 Total time: 0.089477 Average total time: 0.0877164
+I0325 19:35:11.180243 32235 dynfilter_with_odom.cpp:97] -----------cur frame(73) size: 114250--------------: 73
+I0325 19:35:11.227721 32235 dyn_obj_filter.cpp:379] Event detection time: 0.047341s
+I0325 19:35:11.251448 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0200067s
+I0325 19:35:11.269740 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0182396s
+I0325 19:35:11.270002 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 3143 Total time: 0.0896784 Average total time: 0.0877429
+I0325 19:35:11.332880 32235 dynfilter_with_odom.cpp:97] -----------cur frame(74) size: 113860--------------: 74
+I0325 19:35:11.373719 32235 dyn_obj_filter.cpp:379] Event detection time: 0.040724s
+I0325 19:35:11.393007 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0153057s
+I0325 19:35:11.411521 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0184453s
+I0325 19:35:11.411760 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 3166 Total time: 0.0788142 Average total time: 0.0876238
+I0325 19:35:11.472460 32235 dynfilter_with_odom.cpp:97] -----------cur frame(75) size: 114047--------------: 75
+I0325 19:35:11.511999 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0393837s
+I0325 19:35:11.528949 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0136195s
+I0325 19:35:11.546404 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0174111s
+I0325 19:35:11.546628 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 3118 Total time: 0.0740958 Average total time: 0.0874458
+I0325 19:35:11.609899 32235 dynfilter_with_odom.cpp:97] -----------cur frame(76) size: 114046--------------: 76
+I0325 19:35:11.647339 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0373415s
+I0325 19:35:11.666004 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0151872s
+I0325 19:35:11.682292 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0162366s
+I0325 19:35:11.682510 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 3051 Total time: 0.072548 Average total time: 0.0872524
+I0325 19:35:11.740566 32235 dynfilter_with_odom.cpp:97] -----------cur frame(77) size: 114132--------------: 77
+I0325 19:35:11.781394 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0406518s
+I0325 19:35:11.803400 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0188434s
+I0325 19:35:11.819103 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0155911s
+I0325 19:35:11.819329 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 2978 Total time: 0.0786827 Average total time: 0.0871425
+I0325 19:35:11.869045 32235 dynfilter_with_odom.cpp:97] -----------cur frame(78) size: 114038--------------: 78
+I0325 19:35:11.906353 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0372274s
+I0325 19:35:11.926007 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0163274s
+I0325 19:35:11.942185 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0161232s
+I0325 19:35:11.942418 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 2874 Total time: 0.0733265 Average total time: 0.0869676
+I0325 19:35:11.986959 32235 dynfilter_with_odom.cpp:97] -----------cur frame(79) size: 113837--------------: 79
+I0325 19:35:12.021492 32235 dyn_obj_filter.cpp:379] Event detection time: 0.034421s
+I0325 19:35:12.042863 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0173944s
+I0325 19:35:12.057569 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0146526s
+I0325 19:35:12.057778 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 3435 Total time: 0.070742 Average total time: 0.0867648
+I0325 19:35:12.103183 32235 dynfilter_with_odom.cpp:97] -----------cur frame(80) size: 113675--------------: 80
+I0325 19:35:12.134749 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0314783s
+I0325 19:35:12.151682 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.013023s
+I0325 19:35:12.166442 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0146949s
+I0325 19:35:12.166666 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 2657 Total time: 0.0634326 Average total time: 0.0864767
+I0325 19:35:12.207150 32235 dynfilter_with_odom.cpp:97] -----------cur frame(81) size: 113527--------------: 81
+I0325 19:35:12.239874 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0326467s
+I0325 19:35:12.257562 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0144156s
+I0325 19:35:12.272727 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0151186s
+I0325 19:35:12.272933 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 2394 Total time: 0.0657349 Average total time: 0.0862238
+I0325 19:35:12.317386 32235 dynfilter_with_odom.cpp:97] -----------cur frame(82) size: 113458--------------: 82
+I0325 19:35:12.350615 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0331172s
+I0325 19:35:12.369019 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0149233s
+I0325 19:35:12.383643 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.014558s
+I0325 19:35:12.383858 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 2418 Total time: 0.0664008 Average total time: 0.085985
+I0325 19:35:12.430824 32235 dynfilter_with_odom.cpp:97] -----------cur frame(83) size: 113332--------------: 83
+I0325 19:35:12.465870 32235 dyn_obj_filter.cpp:379] Event detection time: 0.034945s
+I0325 19:35:12.483021 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0130984s
+I0325 19:35:12.498661 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0155948s
+I0325 19:35:12.499001 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 2287 Total time: 0.0681168 Average total time: 0.0857722
+I0325 19:35:12.546751 32235 dynfilter_with_odom.cpp:97] -----------cur frame(84) size: 113273--------------: 84
+I0325 19:35:12.584707 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0378612s
+I0325 19:35:12.607219 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0196035s
+I0325 19:35:12.623318 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0160358s
+I0325 19:35:12.623994 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 2330 Total time: 0.0771851 Average total time: 0.0856712
+I0325 19:35:12.675698 32235 dynfilter_with_odom.cpp:97] -----------cur frame(85) size: 113012--------------: 85
+I0325 19:35:12.714114 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0383267s
+I0325 19:35:12.735252 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0179774s
+I0325 19:35:12.751741 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0164129s
+I0325 19:35:12.752017 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 2310 Total time: 0.0762585 Average total time: 0.0855618
+I0325 19:35:12.802974 32235 dynfilter_with_odom.cpp:97] -----------cur frame(86) size: 112980--------------: 86
+I0325 19:35:12.841079 32235 dyn_obj_filter.cpp:379] Event detection time: 0.0380009s
+I0325 19:35:12.859035 32235 dyn_obj_filter.cpp:563] Clustering & Region growth time: 0.0145132s
+I0325 19:35:12.875674 32235 dyn_obj_filter.cpp:576] Depth image constrction time: 0.0165842s
+I0325 19:35:12.875900 32235 dyn_obj_filter.cpp:2382] Found Dynamic Objects, numbers: 2272 Total time: 0.07287 Average total time: 0.0854159

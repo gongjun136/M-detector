@@ -1,0 +1,4 @@
+Log file created at: 2024/03/25 16:39:16
+Running on machine: gj
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0325 16:39:16.722182 15073 dynfilter_with_odom.cpp:97] -----------cur frame(0) size: 121448--------------: 0

@@ -2,7 +2,7 @@
  * @Author: gongjun136 gongjun136@gmail.com
  * @Date: 2024-03-11 19:40:33
  * @LastEditors: gongjun136 gongjun136@gmail.com
- * @LastEditTime: 2024-03-22 11:20:11
+ * @LastEditTime: 2024-03-25 15:32:33
  * @FilePath: /catkin_ws_M-detector/src/M-detector-noted/src/dynfilter_with_odom.cpp
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -43,18 +43,6 @@ using namespace std;
 
 shared_ptr<DynObjFilter> DynObjFilt(new DynObjFilter());
 
-// int     QUAD_LAYER_MAX  = 1;
-// int     occlude_windows = 3;
-// int     point_index = 0;
-// float   VER_RESOLUTION_MAX  = 0.01;
-// float   HOR_RESOLUTION_MAX  = 0.01;
-// float   angle_noise     = 0.001;
-// float   angle_occlude     = 0.02;
-// float   dyn_windows_dur = 0.5;
-// bool    dyn_filter_en = true, dyn_filter_dbg_en = true;
-
-// int     dataset = 0;
-
 ros::Publisher pub_pcl_dyn, pub_pcl_dyn_extend, pub_pcl_std;
 
 // 轨迹回调函数
@@ -88,7 +76,7 @@ void PointsCallback(const sensor_msgs::PointCloud2ConstPtr &msg_in)
 }
 
 // 周期性回调函数，进行动态物体检测
-// out_folder：聚类前的动态标签文件保存路径，out_folder_origin：聚类后的动态标签文件保存路径
+// out_folder：聚类前的动态标签文件保存路径(point_out)，out_folder_origin：聚类后的动态标签文件保存路径(frame_out)
 string out_folder, out_folder_origin;
 int cur_frame = 0;
 void TimerCallback(const ros::TimerEvent &e)
@@ -96,6 +84,7 @@ void TimerCallback(const ros::TimerEvent &e)
     // 检查缓存区是否有新数据
     if (buffer_pcs.size() > 0 && buffer_poss.size() > 0 && buffer_rots.size() > 0 && buffer_times.size() > 0)
     {
+
         // 获取并移除点云数据及其相关的位姿和时间戳
         boost::shared_ptr<PointCloudXYZI> cur_pc = buffer_pcs.at(0);
         buffer_pcs.pop_front();
@@ -105,6 +94,7 @@ void TimerCallback(const ros::TimerEvent &e)
         buffer_poss.pop_front();
         auto cur_time = buffer_times.at(0);
         buffer_times.pop_front();
+        LOG(INFO) << "-----------cur frame(" << cur_frame << ") size: " << cur_pc->size() << "--------------: " << cur_frame;
 
         // 准备输出文件的路径，用于保存处理结果
         string file_name = out_folder;
@@ -118,12 +108,13 @@ void TimerCallback(const ros::TimerEvent &e)
         file_name_origin += sss.str();
         file_name_origin.append(".label");
 
-        // 如果文件名长度超过预设值，则设置输出文件路径，记录动态标签
+        // 如果文件名长度超过预设值，则设置输出文件名，记录动态标签
         if (file_name.length() > 15 || file_name_origin.length() > 15)
             DynObjFilt->set_path(file_name, file_name_origin);
 
         // 动态物体剔除
         DynObjFilt->filter(cur_pc, cur_rot, cur_pos, cur_time);
+
         // 发布动态物体处理后的点云
         DynObjFilt->publish_dyn(pub_pcl_dyn, pub_pcl_dyn_extend, pub_pcl_std, cur_time);
         cur_frame++;
@@ -150,7 +141,7 @@ int main(int argc, char **argv)
 
     // 初始化(封装)其他参数
     DynObjFilt->init(nh);
-    // 初始化ROS发布者0
+    // 初始化ROS发布者
     pub_pcl_dyn_extend = nh.advertise<sensor_msgs::PointCloud2>("/m_detector/frame_out", 10000);
     pub_pcl_dyn = nh.advertise<sensor_msgs::PointCloud2>("/m_detector/point_out", 100000);
     pub_pcl_std = nh.advertise<sensor_msgs::PointCloud2>("/m_detector/std_points", 100000);

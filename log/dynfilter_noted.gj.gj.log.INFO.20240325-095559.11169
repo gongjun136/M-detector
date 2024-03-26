@@ -1,0 +1,327 @@
+Log file created at: 2024/03/25 09:55:59
+Running on machine: gj
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0325 09:55:59.459412 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 0
+I0325 09:55:59.484504 11169 dyn_obj_filter.cpp:642] filter average time: 0.0248861
+I0325 09:55:59.555891 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 1
+I0325 09:55:59.601222 11169 dyn_obj_filter.cpp:642] filter average time: 0.0350657
+I0325 09:55:59.651038 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 2
+I0325 09:55:59.691190 11169 dyn_obj_filter.cpp:642] filter average time: 0.0367468
+I0325 09:55:59.776469 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 3
+I0325 09:55:59.834511 11169 dyn_obj_filter.cpp:642] filter average time: 0.042054
+I0325 09:55:59.884210 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 4
+I0325 09:55:59.942792 11169 dyn_obj_filter.cpp:642] filter average time: 0.0453498
+I0325 09:56:00.008782 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 5
+I0325 09:56:00.067868 11169 dyn_obj_filter.cpp:642] filter average time: 0.0476271
+I0325 09:56:00.145141 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 6
+I0325 09:56:00.210880 11169 dyn_obj_filter.cpp:642] filter average time: 0.0502058
+I0325 09:56:00.290778 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 7
+I0325 09:56:00.363955 11169 dyn_obj_filter.cpp:642] filter average time: 0.0530697
+I0325 09:56:00.426285 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 8
+I0325 09:56:00.485885 11169 dyn_obj_filter.cpp:642] filter average time: 0.053788
+I0325 09:56:00.541504 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 9
+I0325 09:56:00.610780 11169 dyn_obj_filter.cpp:642] filter average time: 0.0553315
+I0325 09:56:03.957794 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 10
+I0325 09:56:04.020797 11169 dyn_obj_filter.cpp:642] filter average time: 0.055988
+I0325 09:56:04.086468 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 11
+I0325 09:56:04.154767 11169 dyn_obj_filter.cpp:642] filter average time: 0.0569817
+I0325 09:56:04.215365 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 12
+I0325 09:56:04.285264 11169 dyn_obj_filter.cpp:642] filter average time: 0.0579407
+I0325 09:56:04.349242 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 13
+I0325 09:56:04.416051 11169 dyn_obj_filter.cpp:642] filter average time: 0.0585548
+I0325 09:56:04.474946 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 14
+I0325 09:56:04.545202 11169 dyn_obj_filter.cpp:642] filter average time: 0.0593125
+I0325 09:56:04.606030 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 15
+I0325 09:56:04.676997 11169 dyn_obj_filter.cpp:642] filter average time: 0.0600175
+I0325 09:56:04.734012 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 16
+I0325 09:56:04.810452 11169 dyn_obj_filter.cpp:642] filter average time: 0.0609565
+I0325 09:56:04.867267 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 17
+I0325 09:56:04.947304 11169 dyn_obj_filter.cpp:642] filter average time: 0.0620024
+I0325 09:56:05.015662 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 18
+I0325 09:56:05.094038 11169 dyn_obj_filter.cpp:642] filter average time: 0.0628522
+I0325 09:56:05.150758 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 19
+I0325 09:56:05.228715 11169 dyn_obj_filter.cpp:642] filter average time: 0.0635833
+I0325 09:56:05.286978 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 20
+I0325 09:56:05.360807 11169 dyn_obj_filter.cpp:642] filter average time: 0.0640495
+I0325 09:56:05.418908 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 21
+I0325 09:56:05.492022 11169 dyn_obj_filter.cpp:642] filter average time: 0.064452
+I0325 09:56:05.545395 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 22
+I0325 09:56:05.609510 11169 dyn_obj_filter.cpp:642] filter average time: 0.0644289
+I0325 09:56:05.663580 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 23
+I0325 09:56:05.736148 11169 dyn_obj_filter.cpp:642] filter average time: 0.0647526
+I0325 09:56:05.792686 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 24
+I0325 09:56:05.872246 11169 dyn_obj_filter.cpp:642] filter average time: 0.0653387
+I0325 09:56:05.925922 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 25
+I0325 09:56:06.007023 11169 dyn_obj_filter.cpp:642] filter average time: 0.0659332
+I0325 09:56:06.064765 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 26
+I0325 09:56:06.140558 11169 dyn_obj_filter.cpp:642] filter average time: 0.0662789
+I0325 09:56:06.205271 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 27
+I0325 09:56:06.286582 11169 dyn_obj_filter.cpp:642] filter average time: 0.0667901
+I0325 09:56:06.346164 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 28
+I0325 09:56:06.420446 11169 dyn_obj_filter.cpp:642] filter average time: 0.0670293
+I0325 09:56:06.483155 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 29
+I0325 09:56:06.557765 11169 dyn_obj_filter.cpp:642] filter average time: 0.0672646
+I0325 09:56:06.615661 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 30
+I0325 09:56:06.694149 11169 dyn_obj_filter.cpp:642] filter average time: 0.067617
+I0325 09:56:06.749250 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 31
+I0325 09:56:06.816968 11169 dyn_obj_filter.cpp:642] filter average time: 0.0676132
+I0325 09:56:06.872788 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 32
+I0325 09:56:06.952582 11169 dyn_obj_filter.cpp:642] filter average time: 0.0679703
+I0325 09:56:07.018891 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 33
+I0325 09:56:07.096555 11169 dyn_obj_filter.cpp:642] filter average time: 0.0682448
+I0325 09:56:07.151333 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 34
+I0325 09:56:07.230041 11169 dyn_obj_filter.cpp:642] filter average time: 0.0685352
+I0325 09:56:07.291585 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 35
+I0325 09:56:07.358366 11169 dyn_obj_filter.cpp:642] filter average time: 0.0684783
+I0325 09:56:07.408934 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 36
+I0325 09:56:07.474205 11169 dyn_obj_filter.cpp:642] filter average time: 0.0683848
+I0325 09:56:07.520964 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 37
+I0325 09:56:07.589574 11169 dyn_obj_filter.cpp:642] filter average time: 0.068381
+I0325 09:56:07.638473 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 38
+I0325 09:56:07.705241 11169 dyn_obj_filter.cpp:642] filter average time: 0.0683333
+I0325 09:56:07.749290 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 39
+I0325 09:56:07.816139 11169 dyn_obj_filter.cpp:642] filter average time: 0.0682899
+I0325 09:56:07.863256 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 40
+I0325 09:56:07.931936 11169 dyn_obj_filter.cpp:642] filter average time: 0.0682928
+I0325 09:56:07.978639 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 41
+I0325 09:56:08.046926 11169 dyn_obj_filter.cpp:642] filter average time: 0.0682874
+I0325 09:56:08.098237 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 42
+I0325 09:56:08.175299 11169 dyn_obj_filter.cpp:642] filter average time: 0.0684841
+I0325 09:56:08.234957 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 43
+I0325 09:56:08.302737 11169 dyn_obj_filter.cpp:642] filter average time: 0.0684624
+I0325 09:56:31.908144 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 44
+I0325 09:56:31.975433 11169 dyn_obj_filter.cpp:642] filter average time: 0.0684287
+I0325 09:56:32.050082 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 45
+I0325 09:56:32.120199 11169 dyn_obj_filter.cpp:642] filter average time: 0.0684614
+I0325 09:56:32.175100 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 46
+I0325 09:56:32.247520 11169 dyn_obj_filter.cpp:642] filter average time: 0.0685418
+I0325 09:56:32.306910 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 47
+I0325 09:56:32.369127 11169 dyn_obj_filter.cpp:642] filter average time: 0.0684028
+I0325 09:56:32.420269 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 48
+I0325 09:56:32.487380 11169 dyn_obj_filter.cpp:642] filter average time: 0.0683709
+I0325 09:56:32.545430 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 49
+I0325 09:56:32.608376 11169 dyn_obj_filter.cpp:642] filter average time: 0.0682523
+I0325 09:56:32.658630 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 50
+I0325 09:56:32.725431 11169 dyn_obj_filter.cpp:642] filter average time: 0.0682185
+I0325 09:56:32.778426 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 51
+I0325 09:56:32.847170 11169 dyn_obj_filter.cpp:642] filter average time: 0.0682232
+I0325 09:56:32.906600 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 52
+I0325 09:56:32.975780 11169 dyn_obj_filter.cpp:642] filter average time: 0.0682365
+I0325 09:56:33.035532 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 53
+I0325 09:56:33.106637 11169 dyn_obj_filter.cpp:642] filter average time: 0.0682846
+I0325 09:56:33.163311 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 54
+I0325 09:56:33.237095 11169 dyn_obj_filter.cpp:642] filter average time: 0.0683771
+I0325 09:56:33.292382 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 55
+I0325 09:56:33.360486 11169 dyn_obj_filter.cpp:642] filter average time: 0.0683661
+I0325 09:56:33.414458 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 56
+I0325 09:56:33.483191 11169 dyn_obj_filter.cpp:642] filter average time: 0.0683688
+I0325 09:56:33.540666 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 57
+I0325 09:56:33.614959 11169 dyn_obj_filter.cpp:642] filter average time: 0.0684671
+I0325 09:56:33.665601 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 58
+I0325 09:56:33.736761 11169 dyn_obj_filter.cpp:642] filter average time: 0.0685074
+I0325 09:56:33.789796 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 59
+I0325 09:56:33.854312 11169 dyn_obj_filter.cpp:642] filter average time: 0.0684372
+I0325 09:56:33.909701 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 60
+I0325 09:56:33.977566 11169 dyn_obj_filter.cpp:642] filter average time: 0.0684231
+I0325 09:56:34.041062 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 61
+I0325 09:56:34.110612 11169 dyn_obj_filter.cpp:642] filter average time: 0.0684373
+I0325 09:56:34.160985 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 62
+I0325 09:56:34.231233 11169 dyn_obj_filter.cpp:642] filter average time: 0.0684617
+I0325 09:56:34.281055 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 63
+I0325 09:56:34.355743 11169 dyn_obj_filter.cpp:642] filter average time: 0.0685558
+I0325 09:56:34.404747 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 64
+I0325 09:56:34.474292 11169 dyn_obj_filter.cpp:642] filter average time: 0.0685682
+I0325 09:56:34.527511 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 65
+I0325 09:56:34.606151 11169 dyn_obj_filter.cpp:642] filter average time: 0.0687174
+I0325 09:56:34.655642 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 66
+I0325 09:56:34.733151 11169 dyn_obj_filter.cpp:642] filter average time: 0.0688465
+I0325 09:56:34.787809 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 67
+I0325 09:56:34.856666 11169 dyn_obj_filter.cpp:642] filter average time: 0.0688447
+I0325 09:56:34.911069 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 68
+I0325 09:56:34.985666 11169 dyn_obj_filter.cpp:642] filter average time: 0.0689252
+I0325 09:56:35.040632 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 69
+I0325 09:56:35.115697 11169 dyn_obj_filter.cpp:642] filter average time: 0.0690092
+I0325 09:56:35.174365 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 70
+I0325 09:56:35.248929 11169 dyn_obj_filter.cpp:642] filter average time: 0.069085
+I0325 09:56:35.315521 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 71
+I0325 09:56:35.378271 11169 dyn_obj_filter.cpp:642] filter average time: 0.0689944
+I0325 09:56:35.439299 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 72
+I0325 09:56:35.511121 11169 dyn_obj_filter.cpp:642] filter average time: 0.0690306
+I0325 09:56:35.569088 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 73
+I0325 09:56:35.641093 11169 dyn_obj_filter.cpp:642] filter average time: 0.0690671
+I0325 09:56:35.691618 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 74
+I0325 09:56:35.758422 11169 dyn_obj_filter.cpp:642] filter average time: 0.0690344
+I0325 09:56:35.812263 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 75
+I0325 09:56:35.885571 11169 dyn_obj_filter.cpp:642] filter average time: 0.0690887
+I0325 09:56:35.944305 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 76
+I0325 09:56:36.027266 11169 dyn_obj_filter.cpp:642] filter average time: 0.0692675
+I0325 09:56:36.093636 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 77
+I0325 09:56:36.168006 11169 dyn_obj_filter.cpp:642] filter average time: 0.0693301
+I0325 09:56:36.221128 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 78
+I0325 09:56:36.294098 11169 dyn_obj_filter.cpp:642] filter average time: 0.0693741
+I0325 09:56:36.353225 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 79
+I0325 09:56:36.427983 11169 dyn_obj_filter.cpp:642] filter average time: 0.0694372
+I0325 09:56:36.478194 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 80
+I0325 09:56:36.545851 11169 dyn_obj_filter.cpp:642] filter average time: 0.0694129
+I0325 09:56:36.596467 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 81
+I0325 09:56:36.664546 11169 dyn_obj_filter.cpp:642] filter average time: 0.0693944
+I0325 09:56:36.716284 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 82
+I0325 09:56:36.783677 11169 dyn_obj_filter.cpp:642] filter average time: 0.0693686
+I0325 09:56:36.838519 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 83
+I0325 09:56:36.905936 11169 dyn_obj_filter.cpp:642] filter average time: 0.0693429
+I0325 09:56:36.956390 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 84
+I0325 09:56:37.031695 11169 dyn_obj_filter.cpp:642] filter average time: 0.0694112
+I0325 09:56:37.080808 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 85
+I0325 09:56:37.146718 11169 dyn_obj_filter.cpp:642] filter average time: 0.0693675
+I0325 09:56:37.190578 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 86
+I0325 09:56:37.260087 11169 dyn_obj_filter.cpp:642] filter average time: 0.0693674
+I0325 09:56:37.311347 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 87
+I0325 09:56:37.383430 11169 dyn_obj_filter.cpp:642] filter average time: 0.0693962
+I0325 09:56:37.444901 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 88
+I0325 09:56:37.518016 11169 dyn_obj_filter.cpp:642] filter average time: 0.0694358
+I0325 09:56:37.576552 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 89
+I0325 09:56:37.644795 11169 dyn_obj_filter.cpp:642] filter average time: 0.0694208
+I0325 09:56:37.694458 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 90
+I0325 09:56:37.763439 11169 dyn_obj_filter.cpp:642] filter average time: 0.0694135
+I0325 09:56:37.816314 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 91
+I0325 09:56:37.883508 11169 dyn_obj_filter.cpp:642] filter average time: 0.0693879
+I0325 09:56:37.932564 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 92
+I0325 09:56:38.002096 11169 dyn_obj_filter.cpp:642] filter average time: 0.0693881
+I0325 09:56:38.056354 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 93
+I0325 09:56:38.131476 11169 dyn_obj_filter.cpp:642] filter average time: 0.0694471
+I0325 09:56:38.183089 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 94
+I0325 09:56:38.248431 11169 dyn_obj_filter.cpp:642] filter average time: 0.0694023
+I0325 09:56:38.304713 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 95
+I0325 09:56:38.372604 11169 dyn_obj_filter.cpp:642] filter average time: 0.069385
+I0325 09:56:38.426146 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 96
+I0325 09:56:38.499714 11169 dyn_obj_filter.cpp:642] filter average time: 0.0694268
+I0325 09:56:38.552054 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 97
+I0325 09:56:38.625838 11169 dyn_obj_filter.cpp:642] filter average time: 0.0694697
+I0325 09:56:38.682825 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 98
+I0325 09:56:38.752064 11169 dyn_obj_filter.cpp:642] filter average time: 0.0694663
+I0325 09:56:38.801581 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 99
+I0325 09:56:38.881487 11169 dyn_obj_filter.cpp:642] filter average time: 0.0695691
+I0325 09:56:38.939330 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 100
+I0325 09:56:39.011518 11169 dyn_obj_filter.cpp:642] filter average time: 0.0695941
+I0325 09:56:39.063560 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 101
+I0325 09:56:39.137076 11169 dyn_obj_filter.cpp:642] filter average time: 0.0696307
+I0325 09:56:39.190008 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 102
+I0325 09:56:39.258284 11169 dyn_obj_filter.cpp:642] filter average time: 0.0696161
+I0325 09:56:39.315800 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 103
+I0325 09:56:39.379899 11169 dyn_obj_filter.cpp:642] filter average time: 0.0695618
+I0325 09:56:39.439755 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 104
+I0325 09:56:39.505630 11169 dyn_obj_filter.cpp:642] filter average time: 0.0695253
+I0325 09:56:39.561272 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 105
+I0325 09:56:39.633949 11169 dyn_obj_filter.cpp:642] filter average time: 0.0695538
+I0325 09:56:39.683355 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 106
+I0325 09:56:39.753716 11169 dyn_obj_filter.cpp:642] filter average time: 0.06956
+I0325 09:56:39.800963 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 107
+I0325 09:56:39.877882 11169 dyn_obj_filter.cpp:642] filter average time: 0.0696269
+I0325 09:56:39.934274 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 108
+I0325 09:56:40.007620 11169 dyn_obj_filter.cpp:642] filter average time: 0.0696598
+I0325 09:56:40.062661 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 109
+I0325 09:56:40.140532 11169 dyn_obj_filter.cpp:642] filter average time: 0.0697334
+I0325 09:56:40.194074 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 110
+I0325 09:56:40.269984 11169 dyn_obj_filter.cpp:642] filter average time: 0.0697879
+I0325 09:56:40.341374 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 111
+I0325 09:56:40.421129 11169 dyn_obj_filter.cpp:642] filter average time: 0.0698759
+I0325 09:56:40.474038 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 112
+I0325 09:56:40.542717 11169 dyn_obj_filter.cpp:642] filter average time: 0.0698641
+I0325 09:56:40.584955 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 113
+I0325 09:56:40.652118 11169 dyn_obj_filter.cpp:642] filter average time: 0.0698395
+I0325 09:56:40.696041 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 114
+I0325 09:56:40.758975 11169 dyn_obj_filter.cpp:642] filter average time: 0.0697787
+I0325 09:56:40.808224 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 115
+I0325 09:56:40.882328 11169 dyn_obj_filter.cpp:642] filter average time: 0.0698149
+I0325 09:56:40.924456 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 116
+I0325 09:56:40.994189 11169 dyn_obj_filter.cpp:642] filter average time: 0.0698136
+I0325 09:56:41.049680 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 117
+I0325 09:56:41.133306 11169 dyn_obj_filter.cpp:642] filter average time: 0.06993
+I0325 09:56:41.187417 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 118
+I0325 09:56:41.267140 11169 dyn_obj_filter.cpp:642] filter average time: 0.0700117
+I0325 09:56:41.315295 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 119
+I0325 09:56:41.388254 11169 dyn_obj_filter.cpp:642] filter average time: 0.0700356
+I0325 09:56:41.438823 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 120
+I0325 09:56:41.505817 11169 dyn_obj_filter.cpp:642] filter average time: 0.0700096
+I0325 09:56:41.547816 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 121
+I0325 09:56:41.619864 11169 dyn_obj_filter.cpp:642] filter average time: 0.0700251
+I0325 09:56:41.664026 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 122
+I0325 09:56:41.739087 11169 dyn_obj_filter.cpp:642] filter average time: 0.0700653
+I0325 09:56:41.779570 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 123
+I0325 09:56:41.851891 11169 dyn_obj_filter.cpp:642] filter average time: 0.0700823
+I0325 09:56:41.904729 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 124
+I0325 09:56:41.984897 11169 dyn_obj_filter.cpp:642] filter average time: 0.0701624
+I0325 09:56:42.027325 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 125
+I0325 09:56:42.090952 11169 dyn_obj_filter.cpp:642] filter average time: 0.0701099
+I0325 09:56:42.132092 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 126
+I0325 09:56:42.193516 11169 dyn_obj_filter.cpp:642] filter average time: 0.0700409
+I0325 09:56:42.231825 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 127
+I0325 09:56:42.301371 11169 dyn_obj_filter.cpp:642] filter average time: 0.0700362
+I0325 09:56:42.341779 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 128
+I0325 09:56:42.410368 11169 dyn_obj_filter.cpp:642] filter average time: 0.0700245
+I0325 09:56:42.449285 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 129
+I0325 09:56:42.515069 11169 dyn_obj_filter.cpp:642] filter average time: 0.069991
+I0325 09:56:48.015316 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 130
+I0325 09:56:48.082079 11169 dyn_obj_filter.cpp:642] filter average time: 0.0699658
+I0325 09:56:48.162261 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 131
+I0325 09:56:48.231622 11169 dyn_obj_filter.cpp:642] filter average time: 0.0699603
+I0325 09:56:48.282719 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 132
+I0325 09:56:48.361322 11169 dyn_obj_filter.cpp:642] filter average time: 0.0700242
+I0325 09:56:48.408950 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 133
+I0325 09:56:48.474659 11169 dyn_obj_filter.cpp:642] filter average time: 0.0699913
+I0325 09:56:48.525683 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 134
+I0325 09:56:48.586804 11169 dyn_obj_filter.cpp:642] filter average time: 0.0699248
+I0325 09:56:48.640838 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 135
+I0325 09:56:48.714571 11169 dyn_obj_filter.cpp:642] filter average time: 0.0699523
+I0325 09:56:48.771395 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 136
+I0325 09:56:48.855329 11169 dyn_obj_filter.cpp:642] filter average time: 0.0700531
+I0325 09:56:48.906787 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 137
+I0325 09:56:48.979561 11169 dyn_obj_filter.cpp:642] filter average time: 0.0700716
+I0325 09:56:49.029634 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 138
+I0325 09:56:49.099244 11169 dyn_obj_filter.cpp:642] filter average time: 0.0700672
+I0325 09:56:49.151149 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 139
+I0325 09:56:49.224184 11169 dyn_obj_filter.cpp:642] filter average time: 0.0700877
+I0325 09:56:49.274133 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 140
+I0325 09:56:49.350003 11169 dyn_obj_filter.cpp:642] filter average time: 0.0701278
+I0325 09:56:49.401371 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 141
+I0325 09:56:49.469959 11169 dyn_obj_filter.cpp:642] filter average time: 0.070116
+I0325 09:56:49.519001 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 142
+I0325 09:56:49.583026 11169 dyn_obj_filter.cpp:642] filter average time: 0.0700727
+I0325 09:56:49.633893 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 143
+I0325 09:56:49.697242 11169 dyn_obj_filter.cpp:642] filter average time: 0.0700254
+I0325 09:56:49.749236 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 144
+I0325 09:56:49.818176 11169 dyn_obj_filter.cpp:642] filter average time: 0.070017
+I0325 09:56:49.865103 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 145
+I0325 09:56:49.945425 11169 dyn_obj_filter.cpp:642] filter average time: 0.0700871
+I0325 09:56:49.995651 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 146
+I0325 09:56:50.062696 11169 dyn_obj_filter.cpp:642] filter average time: 0.0700657
+I0325 09:56:50.115841 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 147
+I0325 09:56:50.184741 11169 dyn_obj_filter.cpp:642] filter average time: 0.070057
+I0325 09:56:50.235749 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 148
+I0325 09:56:50.307312 11169 dyn_obj_filter.cpp:642] filter average time: 0.0700664
+I0325 09:56:50.361881 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 149
+I0325 09:56:50.426899 11169 dyn_obj_filter.cpp:642] filter average time: 0.0700318
+I0325 09:56:50.479552 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 150
+I0325 09:56:50.552527 11169 dyn_obj_filter.cpp:642] filter average time: 0.0700499
+I0325 09:56:50.604700 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 151
+I0325 09:56:50.680420 11169 dyn_obj_filter.cpp:642] filter average time: 0.0700865
+I0325 09:56:50.727257 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 152
+I0325 09:56:50.791971 11169 dyn_obj_filter.cpp:642] filter average time: 0.0700506
+I0325 09:56:50.843508 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 153
+I0325 09:56:50.905607 11169 dyn_obj_filter.cpp:642] filter average time: 0.0699982
+I0325 09:56:50.951547 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 154
+I0325 09:56:51.019343 11169 dyn_obj_filter.cpp:642] filter average time: 0.0699833
+I0325 09:56:51.065899 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 155
+I0325 09:56:51.135092 11169 dyn_obj_filter.cpp:642] filter average time: 0.0699777
+I0325 09:56:51.177124 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 156
+I0325 09:56:51.235467 11169 dyn_obj_filter.cpp:642] filter average time: 0.069903
+I0325 09:56:51.275254 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 157
+I0325 09:56:51.336623 11169 dyn_obj_filter.cpp:642] filter average time: 0.0698484
+I0325 09:56:51.381420 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 158
+I0325 09:56:51.445672 11169 dyn_obj_filter.cpp:642] filter average time: 0.0698127
+I0325 09:56:51.488515 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 159
+I0325 09:56:51.548190 11169 dyn_obj_filter.cpp:642] filter average time: 0.0697486
+I0325 09:56:51.588920 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 160
+I0325 09:56:51.653904 11169 dyn_obj_filter.cpp:642] filter average time: 0.0697185
+I0325 09:56:51.695871 11169 dynfilter_with_odom.cpp:87] -----------cur frame--------------: 161
+I0325 09:56:51.780375 11169 dyn_obj_filter.cpp:642] filter average time: 0.0698089

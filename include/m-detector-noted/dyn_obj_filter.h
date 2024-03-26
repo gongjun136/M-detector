@@ -2,7 +2,7 @@
  * @Author: gongjun136 gongjun136@gmail.com
  * @Date: 2024-03-12 09:39:30
  * @LastEditors: gongjun136 gongjun136@gmail.com
- * @LastEditTime: 2024-03-22 09:43:28
+ * @LastEditTime: 2024-03-25 19:50:38
  * @FilePath: /catkin_ws_M-detector/src/M-detector-noted/include/M-detector-noted/DynObjFilter.h
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -231,6 +231,7 @@ struct point_soph
         position = hor_ind * MAX_1D_HALF + ver_ind;
     };
 
+    // 重置函数
     void reset()
     {
         occu_times = is_occu_times = 0;
@@ -253,17 +254,18 @@ class DepthMap
 public:
     DepthMap2D depth_map; // 记录在像素索引处的点集合
     double time;
-    int map_index; // 帧/深度图索引
+    int map_index; // 深度图队列索引(下标+1)=size()=帧数
     M3D project_R; // 旋转
     V3D project_T; // 平移
     std::vector<point_soph::Ptr> point_sopth_pointer;
     int point_sopth_pointer_count = 0;
-    float *min_depth_all = nullptr;
-    float *max_depth_all = nullptr;
+    // 所有像素的深度范围
+    float *min_depth_all = nullptr; // 像素的最小深度，下标为point_soph的position(水平索引*MAX_1D_HALF+俯仰索引)
+    float *max_depth_all = nullptr; // 像素的最大深度，下标为point_soph的position(水平索引*MAX_1D_HALF+俯仰索引)
 
     // 所有像素的静态深度范围
-    float *max_depth_static = nullptr; // 静态点的最大深度，索引(水平索引*MAX_1D_HALF+俯仰索引)
-    float *min_depth_static = nullptr; // 静态点的最小深度，索引(水平索引*MAX_1D_HALF+俯仰索引)
+    float *max_depth_static = nullptr; // 静态点的最大深度，下标为point_soph的position(水平索引*MAX_1D_HALF+俯仰索引)
+    float *min_depth_static = nullptr; // 静态点的最小深度，下标为point_soph的position(水平索引*MAX_1D_HALF+俯仰索引)
     int *max_depth_index_all = nullptr;
     int *min_depth_index_all = nullptr;
     std::vector<int> index_vector;
@@ -434,32 +436,43 @@ public:
     // ---------------------------其他-----------------------------
     // 是否进行聚类操作
     bool cluster_coupled = false, cluster_future = false;
+    // 深度图队列，其容量为max_depth_map_num，每个像素对应的最大点数为max_pixel_points,索引为map_index
     std::deque<DepthMap::Ptr> depth_map_list;
+    int max_depth_map_num = 5;
+    int max_pixel_points = 50;
+    int map_index = 0;
+    // 点缓存区，其容量为buffer_size
     PARALLEL_Q<point_soph *> buffer;
-    std::vector<point_soph *> point_soph_pointers; // 点云的每个点的详细信息数组
+    int buffer_size = 300000;
+    // point_soph_pointers(二维数组)用于保存当前帧(point_soph *:点数组,初始化数量为points_num_perframe个点)最近的max_pointers_num个帧的数组
+    // 其中当前帧位于下标cur_point_soph_pointers处------------------
+    std::vector<point_soph *>
+        point_soph_pointers; // 点云的每个点的详细信息数组
     int points_num_perframe = 200000;
     int cur_point_soph_pointers = 0;
-    int max_pointers_num = 0;
-    int frame_num_for_rec = 0;
+    int max_pointers_num = 0; // ----------------
+
+    //
+    // int frame_num_for_rec = 0;               // 处理过的帧数
     std::deque<PointCloudXYZI::Ptr> pcl_his_list;
-    PointCloudXYZI::Ptr laserCloudSteadObj;         // 静态点云(世界系)
-    PointCloudXYZI::Ptr laserCloudSteadObj_hist;
-    PointCloudXYZI::Ptr laserCloudDynObj;           // 动态点云(载体系)
-    PointCloudXYZI::Ptr laserCloudDynObj_world;     // 动态点云(世界系)
-    PointCloudXYZI::Ptr laserCloudDynObj_clus;
-    PointCloudXYZI::Ptr laserCloudSteadObj_clus;
+    PointCloudXYZI::Ptr laserCloudSteadObj;      // 静态点云(世界系)
+    PointCloudXYZI::Ptr laserCloudSteadObj_hist; // 最近历史静态点云(世界系)
+    PointCloudXYZI::Ptr laserCloudDynObj;        // 动态点云(载体系)
+    PointCloudXYZI::Ptr laserCloudDynObj_world;  // 动态点云(世界系)
+    PointCloudXYZI::Ptr laserCloudDynObj_clus;   // 聚类后的动态点云(世界系)
+    PointCloudXYZI::Ptr laserCloudSteadObj_clus; // 聚类后的静态点云(世界系)
     std::deque<PointCloudXYZI::Ptr> laserCloudSteadObj_accu;
     int laserCloudSteadObj_accu_times = 0;
     int laserCloudSteadObj_accu_limit = 5;
     float voxel_filter_size = 0.1;
-    
+
     DynObjCluster Cluster;
 
-        // 点云(非聚类)每个点的动态标签数组，0-静态，1-动态，
-    std::vector<int> dyn_tag_origin;     
-    // 点云(聚类后)每个点的动态标签数组，0-静态，1-动态，
-    std::vector<int> dyn_tag_cluster;               
-          
+    // 点云(非聚类)每个点的动态标签数组，0-静态，1-动态，
+    std::vector<int> dyn_tag_origin;
+    // 点云(聚类后)每个点的动态标签数组，0-静态，1-动态，-1-无效点
+    std::vector<int> dyn_tag_cluster;
+
     bool draw_depth = false;
 
     float depth_thr1 = 0.15f, map_cons_depth_thr1 = 0.5f, map_cons_hor_thr1 = 0.02f, map_cons_ver_thr1 = 0.01f;
@@ -486,15 +499,17 @@ public:
     int checkneighbor_range = 1;
 
     double frame_dur = 0.1, buffer_delay = 0.1, depth_map_dur = 0.2f;
-    int buffer_size = 300000, max_depth_map_num = 5;
+    
     int hor_num = MAX_1D, ver_num = MAX_1D_HALF;
 
-    int occu_time_th = 3, is_occu_time_th = 3, map_index = 0;
+    int occu_time_th = 3, is_occu_time_th = 3;
 
-    double time_interp1 = 0.0, time_interp2 = 0.0;
-    double time_search = 0.0, time_search_0 = 0.0, time_research = 0.0, time_build = 0.0, time_other0 = 0.0, time_total = 0.0, time_total_avr = 0.0;
+    // time_total:单次filter总耗时，time_total_avr：filter函数平均耗时
+    double time_total = 0.0, time_total_avr = 0.0;
     float buffer_time = 0.0f, buffer_dur = 0.1f;
-    int point_index = 0, time_ind = 0, max_ind = 1257, occlude_windows = 3;
+    // 时间次数
+    int time_ind = 0;
+    int point_index = 0, max_ind = 1257, occlude_windows = 3;
     bool debug_en = false; // 是否开启调试模式
     int roll_num = 700, pitch_num = 350;
     int dataset = 0; // 数据集标识符
@@ -502,10 +517,10 @@ public:
     float fov_up = 2.0, fov_down = -23, fov_cut = -20, fov_left = 180, fov_right = -180;
     float blind_dis = 0.3; // 扫描盲区距离
     int pixel_fov_up, pixel_fov_down, pixel_fov_cut, pixel_fov_left, pixel_fov_right;
-    int max_pixel_points = 50;
+    
     bool stop_object_detect = false; // 是否进行物体检测
     // point_soph::Ptr last_point_pointer = nullptr;
-    string frame_id = "camera_init";
+    string frame_id = "camera_init"; // 参考坐标系名字
     double invalid_total = 0.0;
     double case1_total = 0.0;
     double case2_total = 0.0;
@@ -514,13 +529,13 @@ public:
     // mutex mtx_case2, mtx_case3;
     std::vector<int> pos_offset;
     // ros::Publisher demo_pcl_display;
-    string time_file;  // 时间日志文件
-    ofstream time_out; // 时间日志文件流
+    // string time_file;  // 时间日志文件
+    // ofstream time_out; // 时间日志文件流
 
     // 性能分析的时间容器
-    std::vector<double> time_test1, time_test2, time_test3, time_occ_check, time_map_cons, time_proj;
-    string time_breakdown_file;
-    ofstream time_breakdown_out;
+    // std::vector<double> time_test1, time_test2, time_test3, time_occ_check, time_map_cons, time_proj;
+    // string time_breakdown_file;     // 分解时间日志文件
+    // ofstream time_breakdown_out;    // 分解时间日志文件流
 
     // 默认构造
     DynObjFilter(){};
@@ -534,7 +549,6 @@ public:
     void init(ros::NodeHandle &nh);
     // 主函数
     void filter(PointCloudXYZI::Ptr feats_undistort, const M3D &rot_end, const V3D &pos_end, const double &scan_end_time);
-
 
     // -------------------------------通用函数-----------------------------------
     void SphericalProjection(point_soph &p, int depth_index, const M3D &rot, const V3D &transl, point_soph &p_spherical);
@@ -557,7 +571,7 @@ public:
     bool Case2SearchPointOccludingP(point_soph &p, const DepthMap &map_info);
     bool Case2IsOccluded(const point_soph &p, const point_soph &p_occ);
     bool Case2VelCheck(float v1, float v2, double delta_t);
-    bool InvalidPointCheck(const V3D &body, const int intensity);
+    bool InvalidPointCheck(const V3D &body);
     bool SelfPointCheck(const V3D &body);
     // -------------------------------情况3动态点检测---------------------------
     bool Case3(point_soph &p);
@@ -568,18 +582,18 @@ public:
     bool Case3DepthConsistencyCheck(const point_soph &p, const DepthMap &map_info);
     bool Case3VelCheck(float v1, float v2, double delta_t);
     // -------------------------------其他------------------------------------
-      void set_path(string file_path, string file_path_origin);
-    void  Points2Buffer(vector<point_soph*> &points, std::vector<int> &index_vector);
-    void  Buffer2DepthMap(double cur_time);
-        void publish_dyn(const ros::Publisher & pub_point_out, const ros::Publisher & pub_frame_out, const ros::Publisher & pub_steady_points, const double & scan_end_time);
-  
+    void set_path(string file_path, string file_path_origin);
+    void Points2Buffer(vector<point_soph *> &points, std::vector<int> &index_vector);
+    void Buffer2DepthMap(double cur_time);
+    void UpdateDepthInfo(point_soph* point, DepthMap::Ptr& currentDepthMap, bool isStatic);
+    void publish_dyn(const ros::Publisher &pub_point_out, const ros::Publisher &pub_frame_out, const ros::Publisher &pub_steady_points, const double &scan_end_time);
 
 private:
     // 是否设置输出路径
     bool is_set_path = false;
     // 输出路径
-    string out_file;            // 聚类后的动态标签文件保存路径
-    string out_file_origin;     // 聚类前的动态标签文件保存路径
+    string out_file;        // 聚类后的动态标签文件保存路径
+    string out_file_origin; // 聚类前的动态标签文件保存路径
 };
 
 #endif
